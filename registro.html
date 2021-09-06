@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo_registro">Registro de nuevos usuarios</h1>
+        <h2 id="sub_titulo_registro">Ingrese los datos solicitados</h2>
+        <nav>
+            <li><a href="#">registro</a></li>
+            <li><a href="busqueda.html">busqueda</a></li>
+            <li><a href="ajustesPerfil.html">ajustesPerfil</a></li>
+            <li><a href="filtrado.html">filtrado</a></li>
+            <li><a href="login.html">login</a></li>            
+            <li><a href="#footer">Ir al footer</a></li>                    
+        </nav>
+    </header>
+    <hr/>
+    <form action="pendiente.html" target="_blank">
+        <p>Los campos con (*) son obligatorios.</p>
+        <p>Ingrese su documento (*): <input type="text" name="doc"></p>
+        <p>Ingrese su nombre y/o nombres (*): <input type="text" name="nombre"></p>
+        <p>Ingrese sus apellidos (*): <input type="text" name="apellidos"></p>
+        <p>Ingrese su correo (*): <input type="text" name="correo"></p> <!-- ESTE CAMPO DEBE SER UNIQUE, NO SE COMO HACERLO-->
+        <p>Ingrese su clave (*): <input type="password" name="clave"></p>
+        <p>Fecha de Registro (*): <input type="date" name="registro"></p>    
+        <input type="submit" value="Enviar">
+    </form>
+    <footer id="footer">@Copyright todos los derechos reservados</footer>
+</body>
+</html>
