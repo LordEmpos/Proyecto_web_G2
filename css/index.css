@@ -1,0 +1,24 @@
+.barra-busqueda{
+    padding: 7px 20px;
+    font-size: 18px;
+    border: none;
+    width: 500px;
+    margin: 30px 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.buscar-titulo{
+    font: normal 15px Arial, Helvetica, 'sans-serif';
+}
+.boton-buscar{
+    background-color: #1a293d;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.boton-buscar:hover{
+    background-color: #661b77   ;
+}
