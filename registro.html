@@ -5,36 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/registro.css" type="text/css">
 </head>
 <body>
     <header>
-        <h1 id="titulo_registro">Registro de nuevos usuarios</h1>
-        <h2 id="sub_titulo_registro">Ingrese los datos solicitados</h2>
-        <nav>
-            <li><a href="#">registro</a></li>
-            <li><a href="busqueda.html">busqueda</a></li>
-            <li><a href="ajustesPerfil.html">ajustesPerfil</a></li>
-            <li><a href="filtrado.html">filtrado</a></li>
-            <li><a href="login.html">login</a></li>
-            <li><a href="historial.html">historial</a></li>
-            <li><a href="reservas.html">reservas</a></li>
-            <li><a href="eliminar.html">eliminar</a></li>            
-            <li><a href="#footer">Ir al footer</a></li>                    
-        </nav>
+        <div class="logo-navbar"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel"></div>
+            <nav>
+                <div class="contenedor">
+                    <ul class="menu">
+                        <li class="BotonMenu"><a href="index.html">Busca hotel</a></li>
+                        <li class="BotonMenu"><a href="historial.html">Historial de reservas</a></li>
+                        <li class="BotonMenu BotonMenuActivo"><a href="#">Regístrate</a></li>
+                        <li class="BotonMenu"><a href="login.html">Ingresa</a></li>
+                        <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>              
+                    </ul>            
+                </div>
+            </nav>
     </header>
-    <hr/>
-    <form action="pendiente.html" target="_blank">
-        <p>Los campos con (*) son obligatorios.</p><br/>
-        <p>Ingrese su documento (*): <input type="text" name="doc"></p>
-        <p>Ingrese su nombre y/o nombres (*): <input type="text" name="nombre"></p>
-        <p>Ingrese sus apellidos (*): <input type="text" name="apellidos"></p>
-        <p>Ingrese su correo (*): <input type="text" name="correo"></p>
-        <p>Ingrese su clave (*): <input type="password" name="clave"></p>
-        <p>Fecha de Registro (*): <input type="date" name="registro"></p><br/>    
-        <input type="submit" value="Enviar">
-    </form>
-    <hr/>
-    <footer id="footer">@Copyright todos los derechos reservados</footer>
+    <hgroup>
+        <div class="contenedor">
+            <div id="seccion">
+                <form action="pendiente.html"> <!-- en action, se debe poner la web donde lleguen los datos suministrados-->
+                    <p>Los campos con (*) son obligatorios.</p><br/>
+                    <p>Documento (*): <input class="campoTexto campDoc" type="text" name="doc" placeholder="Ingrese su documento"></p>
+                    <p>Nombres: (*): <input class="campoTexto campNom" type="text" name="nombre" placeholder="Ingrese su(s) nombres"></p>
+                    <p>Apellidos (*): <input class="campoTexto campApe" type="text" name="apellidos" placeholder="Ingrese sus apellidos"></p>
+                    <p>Correo (*): <input class="campoTexto campCorr" type="email" name="correo" placeholder="Ingrese su correo"></p>
+                    <p>Clave (*): <input class="campoTexto campCla1" type="password" name="password" placeholder="Ingrese su contraseña"></p>
+                    <p>Clave (*): <input class="campoTexto campCla2" type="password" name="password2" placeholder="Confirme su contraseña"></p>
+                    <p>Fecha de Registro (*): <input class="campoTexto campFecha" type="date" name="registro" placeholder="Seleccione su fecha de registro"></p><br/>    
+                    <input class="BotonRegistro" type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </hgroup>
+    <footer id="footer">
+        <p class="annio">2021</p>
+        <p>® Copyright todos los derechos reservados</p>
+        <small>Realizado por CODERS MisiónTIC2022</small>
+    </footer>    
+    
 </body>
 </html>
