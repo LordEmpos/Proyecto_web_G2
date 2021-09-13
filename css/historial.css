@@ -1,0 +1,20 @@
+.tablahistorial,th,td{
+    
+    margin: 0 auto 2em;
+    align-content: center;
+    border: 3px solid black;
+    border-collapse: collapse;
+   }
+   th,td{
+    padding: 10px;
+} 
+
+.botonbuscar{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a293d;
+    cursor: pointer;
+    color: white;
+}
+.botonbuscar:hover{background-color: #661b77;}
