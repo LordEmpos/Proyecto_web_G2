@@ -65,3 +65,12 @@ footer p{
     margin: 3px;
 }
 .annio{font-size: 14px;}
+.BotonRegistro{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a293d;
+    cursor: pointer;
+    color: white;
+}
+.BotonRegistro:hover{background-color: #661b77;}

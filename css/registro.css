@@ -32,7 +32,7 @@
 .campCla1{margin-left: 100px;}
 .campCla2{margin-left: 100px;}
 .campFecha{margin-left: 10px;}
-.BotonRegistro{
+/* .BotonRegistro{
     padding: 8px 15px;
     border-radius: 20px;
     border: none;
@@ -40,4 +40,4 @@
     cursor: pointer;
     color: white;
 }
-.BotonRegistro:hover{background-color: #661b77;}
+.BotonRegistro:hover{background-color: #661b77;} */
