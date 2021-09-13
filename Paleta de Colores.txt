@@ -1,0 +1,3 @@
+azul_oscuro = #1a293d 
+morado = #661b77 
+fucsia/rosado = #e405d5

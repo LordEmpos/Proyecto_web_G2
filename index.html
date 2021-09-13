@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busqueda</title>
+    <title>Bucarhotel - Inicio</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -24,20 +25,70 @@
             </nav>
     </header>
     <hgroup>
-        <div class="contenedor">
+        <div class="container">
             <!-- CODERS: Aquí pueden ingresar los datos y formaularios de cada una de las páginas que desarrollen -->
             <!-- Inicio  -->
-            <div class="busqueda">
-                <h1 class="buscar-titulo">
-                    ¡Bienvenido viajero!<br><br>
-                    En <strong>Bucarhotel.com</strong> en tan sólo un par de pasos puedes encontrar el mejor hotel en la ciudad de Bucaramanga para tí. <br>
-                    ¡Es fácil!, tú solamente ingresa los datos y nosotros nos encargamos del resto  
-                </h1>
-                <form action="">
-                    <label><input type="text" name="buscar" placeholder="Ingresa los datos para tu búsqueda" class="barra-busqueda"></label>
-                    <input type="submit" value="Buscar" class="boton-buscar">
-                </form>
+            <div class="row">
+                <div id="busqueda">
+                    <h1 class="buscar-titulo">
+                        ¡Bienvenido viajero!<br><br>
+                        En <strong>Bucarhotel.com</strong> en tan sólo un par de pasos puedes encontrar el mejor hotel en la ciudad de Bucaramanga para tí. <br>
+                        ¡Es fácil!, tú solamente ingresa los datos y nosotros nos encargamos del resto  
+                    </h1>
+                    <form action="">
+                        <label><input type="text" name="buscar" placeholder="Ingresa los datos para tu búsqueda" class="barra-busqueda"></label>
+                        <input type="submit" value="Buscar" class="boton-buscar">
+                    </form>
+                </div>    
             </div>
+            <div id="resultados">
+                <div class="resultadostitulo">Encontramos estas opciones que podrían interesarte</div>
+                <div>Filtrar por:
+                    <form action="">
+                        <select multiple name="categorias[]">
+                            <option value="arte">Precios más bajos</option>
+                            <option value="accion">Recomendados</option>
+                            <option value="animacion">Mejor puntuados</option>
+                            <option value="naturaleza">Más buscados</option>
+                        </select><br>
+                        <input type="submit" value="Filtrar" class="BotonRegistro">
+                    </form>
+                </div>
+                <ul class="lista-resultados row">
+                    <li class="resultado-hotel col-3">
+                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                        <h4>Nombre del hotel</h4>
+                        <h5>4 Estrellas</h5>
+                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                        <h3>Precio: $300.000</h3>
+                        <a href="#" class="BotonRegistro">Hacer reserva</a>
+                    </li>
+                    <li class="resultado-hotel col-3">
+                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab2.jpeg" alt="habitacion2" class="foto-habitacion"></div>
+                        <h4>Nombre del hotel</h4>
+                        <h5>4 Estrellas</h5>
+                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                        <h3>Precio: $300.000</h3>
+                        <a href="#" class="BotonRegistro">Hacer reserva</a>
+                    </li>
+                    <li class="resultado-hotel col-3">
+                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab3.jpeg" alt="habitacion3" class="foto-habitacion"></div>
+                        <h4>Nombre del hotel</h4>
+                        <h5>4 Estrellas</h5>
+                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                        <h3>Precio: $300.000</h3>
+                        <a href="#" class="BotonRegistro">Hacer reserva</a>
+                    </li>
+                    <li class="resultado-hotel col-3">
+                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab4.jpeg" alt="habitacion4" class="foto-habitacion"></div>
+                        <h4>Nombre del hotel</h4>
+                        <h5>4 Estrellas</h5>
+                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                        <h3>Precio: $300.000</h3>
+                        <a href="#" class="BotonRegistro">Hacer reserva</a>
+                    </li>
+                </ul>
+            </div>    
             <!-- Fin  -->
         </div>
     </hgroup>
