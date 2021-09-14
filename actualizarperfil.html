@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar perfil</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/actualizarperfil.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo-navbar"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel"></div>
+            <nav>
+                <div class="contenedor">
+                    <ul class="menu">
+                        <li class="BotonMenu"><a href="index.html">Busca hotel</a></li>
+                        <li class="BotonMenu"><a href="historial.html">Historial de reservas</a></li>
+                        <li class="BotonMenu"><a href="#">Regístrate</a></li>
+                        <li class="BotonMenu"><a href="login.html">Ingresa</a></li>
+                        <li class="BotonMenu BotonMenuActivo"><a href="ajustesPerfil.html">Perfil</a></li>              
+                    </ul>            
+                </div>
+            </nav>
+    </header>
+    <hgroup>
+        <div class="contenedor">
+            <div id="seccion">
+                <h3>Actualiza tu información para que podamos mejorar la forma en que encontramos los mejores resultados para tí.</h3>
+                <form action=""> <!-- en action, se debe poner la web donde lleguen los datos suministrados-->
+                    <p class="actualizarItem">Documento:</p><input class="campoActualizar" type="text" name="doc" placeholder="00000001">
+                    <p class="actualizarItem">Nombres:</p><input class="campoActualizar" type="text" name="nombre" placeholder="Amparo">
+                    <p class="actualizarItem">Apellidos:</p><input class="campoActualizar" type="text" name="apellidos" placeholder="Grisales Patiño">
+                    <p class="actualizarItem">Correo:</p><input class="campoActualizar" type="email" name="correo" placeholder="amparitoforever@mail.com"><br>
+                    <input class="BotonRegistro btnAcualizar" type="submit" value="Actualizar">
+                </form>
+            </div>
+            <br>
+            <hr>
+            <div class="btnAcualizarPass">
+                <a class="BotonRegistro" href="actualizarcontrasena.html">Cambiar la contraseña</a>
+            </div> 
+        </div>
+    </hgroup>
+    <footer id="footer">
+        <p class="annio">2021</p>
+        <p>® Copyright todos los derechos reservados</p>
+        <small>Realizado por CODERS MisiónTIC2022</small>
+    </footer>    
+    
+</body>
+</html>
