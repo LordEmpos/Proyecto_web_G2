@@ -45,6 +45,9 @@ nav{
     color: white;
     text-decoration: none;   
 }
+.BotonMenu a:hover{
+    color: white;
+}
 .BotonMenuActivo{
     background-color: rgb(62, 62, 62);
 }
