@@ -33,11 +33,11 @@
 .campFecha{margin-left: 10px;}
 .datosEncabezado{
     display: inline-block;
-    font:bold 18px Arial, Helvetica, 'sans-serif';
+    font:bold 14px Arial, Helvetica, 'sans-serif';
 }
 .datosContenido{
     display: inline-block;
-    font:normal 18px Arial, Helvetica, 'sans-serif';    
+    font:normal 14px Arial, Helvetica, 'sans-serif';    
 }
 .datosEncabezado,.datosContenido{
     margin: 5px;
