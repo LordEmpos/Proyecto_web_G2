@@ -26,9 +26,19 @@
     font-size: 12px;    
 }
 .campDoc{margin-left: 59px;}
-.campNom{margin-left: 72px;}
-.campApe{margin-left: 75px;}
-.campCorr{margin-left: 92px;}
+.campNom{margin-left: 70px;}
+.campApe{margin-left: 76px;}
+.campCorr{margin-left: 90px;}
 .campCla1{margin-left: 100px;}
-.campCla2{margin-left: 100px;}
 .campFecha{margin-left: 10px;}
+.datosEncabezado{
+    display: inline-block;
+    font:bold 18px Arial, Helvetica, 'sans-serif';
+}
+.datosContenido{
+    display: inline-block;
+    font:normal 18px Arial, Helvetica, 'sans-serif';    
+}
+.datosEncabezado,.datosContenido{
+    margin: 5px;
+}
