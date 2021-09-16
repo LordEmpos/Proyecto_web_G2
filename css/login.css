@@ -3,10 +3,12 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .credenciales{
 
 text-align: center;
-
     
 }
 body{
