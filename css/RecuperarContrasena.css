@@ -1,10 +1,23 @@
-h1
 .recuperacion{
-    
+    text-align: center; 
 }
-.volver{
+.Volver{
     color: blue;
 }
 .BotonRecuperar{
-
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1a293d;
+    cursor: pointer;
+    color: white;
+}
+.Ingresocorreo{
+    box-sizing: content-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    width: 350px;
+    border-radius: 20px;
 }
