@@ -5,93 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bucarhotel - Inicio</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main2.css" type="text/css"> <!-- main css implementando Bootstrap -->
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+    <!-- CODERS: Este es el código del HEADER con la Navbar implementando Bootstrap y responsive -->
+    <!-- Inicio  -->
     <header>
-        <div class="logo-navbar"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel"></div>
-            <nav>
-                <div class="contenedor">
-                    <ul class="menu">
-                        <li class="BotonMenu BotonMenuActivo"><a href="#">Busca hotel</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
+            <div class="container container-mobile">
+                <a href="#"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>        
+                <div class="collapse navbar-collapse" id="navbarsItems">
+                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                        <li class="BotonMenu BotonMenuActivo"><a href="#">Buscar hotel</a></li>
                         <li class="BotonMenu"><a href="historial.html">Historial de reservas</a></li>
                         <li class="BotonMenu"><a href="registro.html">Regístrate</a></li>
                         <li class="BotonMenu"><a href="login.html">Ingresa</a></li>
-                        <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>              
-                    </ul>            
+                        <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>    
+                    </ul>
                 </div>
-            </nav>
-    </header>
-    <hgroup>
-        <div class="container">
-            <!-- CODERS: Aquí pueden ingresar los datos y formaularios de cada una de las páginas que desarrollen -->
-            <!-- Inicio  -->
-            <div class="row">
-                <div id="busqueda">
-                    <h1 class="buscar-titulo">
-                        ¡Bienvenido viajero!<br><br>
-                        En <strong>Bucarhotel.com</strong> en tan sólo un par de pasos puedes encontrar el mejor hotel en la ciudad de Bucaramanga para tí. <br>
-                        ¡Es fácil!, tú solamente ingresa los datos y nosotros nos encargamos del resto  
-                    </h1>
-                    <form action="">
-                        <label><input type="text" name="buscar" placeholder="Ingresa los datos para tu búsqueda" class="barra-busqueda"></label>
-                        <input type="submit" value="Buscar" class="boton-buscar">
-                    </form>
-                </div>    
             </div>
-            <div id="resultados">
-                <div class="resultadostitulo">Encontramos estas opciones que podrían interesarte</div>
-                <div>Filtrar por:
-                    <form action="">
-                        <select multiple name="categorias[]">
-                            <option value="arte">Precios más bajos</option>
-                            <option value="accion">Recomendados</option>
-                            <option value="animacion">Mejor puntuados</option>
-                            <option value="naturaleza">Más buscados</option>
-                            <option value="mascotas">Admite mascotas</option>
-                        </select><br>
-                        <input type="submit" value="Filtrar" class="BotonRegistro">
-                    </form>
+        </nav>
+    </header>
+    <!-- Fin  -->
+
+    <hgroup>
+        <div class="parallax-home">
+            <div class="container">
+                <div class="row">
+                    <div id="busqueda">
+                        <p class="welcome-text">¡Bienvenido a Bucaramanga viajero!</p>
+                        <h1 class="buscar-titulo">
+                            En <strong>Bucarhotel.com</strong> en tan sólo un par de pasos puedes encontrar el mejor hotel en la ciudad de Bucaramanga para tí. <br>
+                            ¡Es fácil!, tú solamente ingresa los datos y nosotros nos encargamos del resto  
+                        </h1>
+                        <form action="" class="buscar-form">
+                            <input type="text" name="buscar" placeholder="Ingresa los datos para tu búsqueda" class="barra-busqueda">
+                            <input type="submit" value="Buscar" class="boton-buscar">
+                        </form>
+                    </div>    
                 </div>
-                <ul class="lista-resultados row">
-                    <li class="resultado-hotel col-3">
-                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
-                        <h4>Nombre del hotel</h4>
-                        <h5>4 Estrellas</h5>
-                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                        <h3>Precio: $300.000</h3>
-                        <a href="#" class="BotonRegistro">Hacer reserva</a>
-                    </li>
-                    <li class="resultado-hotel col-3">
-                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab2.jpeg" alt="habitacion2" class="foto-habitacion"></div>
-                        <h4>Nombre del hotel</h4>
-                        <h5>4 Estrellas</h5>
-                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                        <h3>Precio: $300.000</h3>
-                        <a href="#" class="BotonRegistro">Hacer reserva</a>
-                    </li>
-                    <li class="resultado-hotel col-3">
-                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab3.jpeg" alt="habitacion3" class="foto-habitacion"></div>
-                        <h4>Nombre del hotel</h4>
-                        <h5>4 Estrellas</h5>
-                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                        <h3>Precio: $300.000</h3>
-                        <a href="#" class="BotonRegistro">Hacer reserva</a>
-                    </li>
-                    <li class="resultado-hotel col-3">
-                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab4.jpeg" alt="habitacion4" class="foto-habitacion"></div>
-                        <h4>Nombre del hotel</h4>
-                        <h5>4 Estrellas</h5>
-                        <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                        <h3>Precio: $300.000</h3>
-                        <a href="#" class="BotonRegistro">Hacer reserva</a>
-                    </li>
-                </ul>
-            </div>    
-            <!-- Fin  -->
+            </div>
         </div>
+        
+        <div class="container" id="resultados">
+            <div class="resultadostitulo">Encontramos estas opciones que podrían interesarte</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-box position-sticky" style="top: 85px">
+                        <div>Filtrar por:
+                            <form action="">
+                                <select multiple name="categorias[]">
+                                    <option value="arte">Precios más bajos</option>
+                                    <option value="accion">Recomendados</option>
+                                    <option value="animacion">Mejor puntuados</option>
+                                    <option value="naturaleza">Más buscados</option>
+                                    <option value="mascotas">Admite mascotas</option>
+                                </select><br>
+                                <input type="submit" value="Filtrar" class="BotonRegistro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <ul class="row lista-resultados">
+                        <li class="resultado-hotel col-md-4 col-xs-12">
+                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                            <h4>Nombre del hotel</h4>
+                            <h5>4 Estrellas</h5>
+                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                            <h3>Precio: $300.000</h3>
+                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                        </li>
+                        <li class="resultado-hotel col-md-4 col-xs-12">
+                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab2.jpeg" alt="habitacion2" class="foto-habitacion"></div>
+                            <h4>Nombre del hotel</h4>
+                            <h5>4 Estrellas</h5>
+                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                            <h3>Precio: $300.000</h3>
+                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                        </li>
+                        <li class="resultado-hotel col-md-4 col-xs-12">
+                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab3.jpeg" alt="habitacion3" class="foto-habitacion"></div>
+                            <h4>Nombre del hotel</h4>
+                            <h5>4 Estrellas</h5>
+                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                            <h3>Precio: $300.000</h3>
+                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                        </li>
+                        <li class="resultado-hotel col-md-4 col-xs-12">
+                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab4.jpeg" alt="habitacion4" class="foto-habitacion"></div>
+                            <h4>Nombre del hotel</h4>
+                            <h5>4 Estrellas</h5>
+                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
+                            <h3>Precio: $300.000</h3>
+                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </hgroup>
     <footer id="footer">
         <p class="annio">2021</p>
@@ -99,5 +117,7 @@
         <small>Realizado por CODERS MisiónTIC2022</small>
     </footer>    
     
+    <script src="js/bootstrap.bundle.js"></script>
+
 </body>
 </html>
