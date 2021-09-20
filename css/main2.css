@@ -8,7 +8,7 @@ a:hover{color: #000;}
 body{
     background-color: rgb(210, 210, 210) !important;
 }
-nav{position: fixed !important; top: 0 !important; z-index: 1000 !important;}
+nav{position: fixed !important; top: 0 !important; z-index: 1000 !important; border-bottom: solid 2px #fff;}
 .logo-navbar{
     width: 100%;
     background-color: #1a293d;
@@ -39,7 +39,7 @@ nav{position: fixed !important; top: 0 !important; z-index: 1000 !important;}
     font: normal 15px Arial, Helvetica, 'sans-serif';
     background-color: #172639;
     display: inline-block;
-    padding: 5px 15px;
+    padding: 7px 15px;
     margin: 10px 5px;
     border: solid 1px #2e4463;
     border-radius: 25px;
@@ -114,10 +114,13 @@ textarea:focus, input:focus{
             padding: 15px 0 0;
         }
         .BotonMenu{
-            font: normal 16px Arial, Helvetica, 'sans-serif';
+            font-size: normal 16px Arial, Helvetica, 'sans-serif';
             display: block;
             padding: 10px 15px;
             margin: 5px 0;
+        }
+        .BotonRegistro{
+            font-size: 16px !important;
         }
         hgroup{
             margin-top: 67px; 

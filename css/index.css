@@ -64,6 +64,7 @@ hgroup{padding: 3px 0;}
     background: linear-gradient(90deg, rgba(26,41,61,1) 0%, rgba(117,25,129,1) 61%, rgba(161,4,150,1) 100%);
     padding: 8px;
     border-radius: 25px;
+    margin: 20px 0 10px;
 }
 .lista-resultados{
     padding: 10px !important;
@@ -97,24 +98,45 @@ hgroup{padding: 3px 0;}
 .precio-anexo{
     font: normal 11px Arial, Helvetica, 'sans-serif';
 }
-.BotonOrdenar{
-    padding: 5px 15px !important;
+.BotonFiltrar{
+    margin-top: -20px !important;
+    padding: 5px 25px !important;
     border-radius: 20px;
     border: none;
     background-color: #1a293d;
     cursor: pointer;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
-.BotonOrdenar:hover{background-color: #661b77; color: white;}
+.BotonFiltrar:hover{background-color: #661b77; color: white;}
+.filter-select-text{
+    font-size: 14px;
+    background-color: #676767;
+    padding: 8px 15px;
+    color: white;
+}
+.filtrar-box{
+    margin-top: 15px;
+    padding: 0 !important;
+}
+.filtrar-titulo{
+    background-color: #1a293d;
+    color: white;
+    padding: 5px 15px;
+    margin: 0;
+    
+}
+.filtrar-form select{
+    border: none;
+    width: 100%;
+    height: 193px;
+}
+.filtrar-form select option{
+    padding: 9px; 
+    text-align: center;   
+}
 
 /* RESPONSIVE HOME */
-
-/* Tablets */
-@media screen and (max-width: 800px){
-
-}
-
 /* Celulares */
 @media screen and (max-width: 400px){
     #busqueda{
@@ -124,10 +146,30 @@ hgroup{padding: 3px 0;}
         width: 100%;
         margin: 20px 0px;
     }
+    .row-custom{
+        margin-right: 0 !important;
+        padding-left: 0px;
+    }
+    .col-xs-12{
+        padding-right: 0 !important;
+    }
     .buscar-form{
         padding: 0;
     }
     .resultadostitulo{
         margin: 0 15px;
+        padding: 10px;
+        border-radius: 30px;
     }
+    .lista-resultados{
+        padding: 20px 10px 20px 20px !important;
+    }
+    .filtrar-box{
+        padding: 0 15px !important;
+    }
+    .BotonFiltrar, .boton-buscar{
+        font-size: 16px;
+    }
+
+
 }
