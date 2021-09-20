@@ -10,8 +10,9 @@ class CreateClientesTable extends Migration
     public function up()
     {
         Schema::create('clientes', function (Blueprint $table) {
-            $table->string('doc',10);
-            $table->string('nombre',50);
+            $table->string('doc', 10);
+            $table->string('nombre', 50);
+            $table->string('apellidos', 50);
             $table->string('correo', 50)->unique();
             $table->string('clave', 64);
             $table->date('registro');
