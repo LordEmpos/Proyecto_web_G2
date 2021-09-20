@@ -3,11 +3,12 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-a{text-decoration: none !important;}
+a{text-decoration: none !important; color: #212121;}
+a:hover{color: #000;}
 body{
     background-color: rgb(210, 210, 210) !important;
 }
-nav{position: fixed !important; top: 0 !important;}
+nav{position: fixed !important; top: 0 !important; z-index: 1000 !important;}
 .logo-navbar{
     width: 100%;
     background-color: #1a293d;
@@ -101,7 +102,6 @@ textarea:focus, input:focus{
         .logo{
             max-width: 250px;
             height: auto;
-            margin-right: 10px;
         }
         #navbarsItems{
             padding: 15px 0 0;
