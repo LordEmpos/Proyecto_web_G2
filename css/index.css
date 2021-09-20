@@ -54,6 +54,7 @@ hgroup{padding: 3px 0;}
 #resultados{
     height: auto;
     margin-top: 15px;
+    margin-bottom: 15px;
     padding: 0;
     text-align: center;
 }
