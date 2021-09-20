@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bucarhotel - Inicio</title>
+    <title>Bucarhotel.com - Inicio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main2.css" type="text/css"> <!-- main css implementando Bootstrap -->
     <link rel="stylesheet" href="css/index.css" type="text/css">
@@ -55,76 +55,122 @@
         <div class="container" id="resultados">
             <div class="resultadostitulo">Encontramos estas opciones que podrían interesarte</div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12">
                     <div class="filter-box position-sticky" style="top: 85px">
-                        <div>Filtrar por:
+                        <div>Ordenar por:
                             <form action="">
                                 <select multiple name="categorias[]">
-                                    <option value="arte">Precios más bajos</option>
-                                    <option value="accion">Recomendados</option>
-                                    <option value="animacion">Mejor puntuados</option>
-                                    <option value="naturaleza">Más buscados</option>
+                                    <option value="precioMasBajo">Precio más bajo</option>
+                                    <option value="recomendados">Recomendados</option>
+                                    <option value="mejorPuntuados">Mejor puntuados</option>
+                                    <option value="masBuscados">Más buscados</option>
                                     <option value="mascotas">Admite mascotas</option>
                                 </select><br>
-                                <input type="submit" value="Filtrar" class="BotonRegistro">
+                                <input type="submit" value="Ordenar" class="BotonOrdenar">
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <ul class="row lista-resultados">
-                        <a href="#">
-                            <li class="resultado-hotel col-md-4 col-xs-12">
-                                <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
-                                <h4>Nombre del hotel</h4>
-                                <h5>4 Estrellas</h5>
-                                <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                                <h3>Precio: $300.000</h3>
-                                <a href="#" class="BotonRegistro">Hacer reserva</a>
-                            </li>
-                        </a>
-                        <li class="resultado-hotel col-md-4 col-xs-12">
-                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab2.jpeg" alt="habitacion2" class="foto-habitacion"></div>
-                            <h4>Nombre del hotel</h4>
-                            <h5>4 Estrellas</h5>
-                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                            <h3>Precio: $300.000</h3>
-                            <a href="#" class="BotonRegistro">Hacer reserva</a>
-                        </li>
-                        <li class="resultado-hotel col-md-4 col-xs-12">
-                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab3.jpeg" alt="habitacion3" class="foto-habitacion"></div>
-                            <h4>Nombre del hotel</h4>
-                            <h5>4 Estrellas</h5>
-                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                            <h3>Precio: $300.000</h3>
-                            <a href="#" class="BotonRegistro">Hacer reserva</a>
-                        </li>
-                        <li class="resultado-hotel col-md-4 col-xs-12">
-                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab4.jpeg" alt="habitacion4" class="foto-habitacion"></div>
-                            <h4>Nombre del hotel</h4>
-                            <h5>4 Estrellas</h5>
-                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                            <h3>Precio: $300.000</h3>
-                            <a href="#" class="BotonRegistro">Hacer reserva</a>
-                        </li>
-                        <li class="resultado-hotel col-md-4 col-xs-12">
-                            <div class="f-h-p"><img src="img/fotos_habitaciones/hab4.jpeg" alt="habitacion4" class="foto-habitacion"></div>
-                            <h4>Nombre del hotel</h4>
-                            <h5>4 Estrellas</h5>
-                            <div>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, ut, magnam aliquam praesentium quis voluptatibus modi reprehenderit nulla asperiores, vero tempore possimus nesciunt obcaecati dolorem. Distinctio earum hic blanditiis!</div>
-                            <h3>Precio: $300.000</h3>
-                            <a href="#" class="BotonRegistro">Hacer reserva</a>
-                        </li>
-                    </ul>
+                <div class="col-md-9 col-xs-12 album p-1">
+                    <div class="container lista-resultados">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                            <div class="col">
+                                <a href="#">
+                                    <div class="card shadow-sm">
+                                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                                        <h2 class="nombre-hotel">Holiday Inn Bucaramanga Cacique</h2>                                            
+                                        <div class="estrellas"><img src="img/iconos/estrellas_3.png" alt=""></div>
+                                        <div class="card-body"> 
+                                            <h3 class="precio">$350.000</h3>
+                                            <p class="precio-anexo">*precio por noche</p>
+                                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <div class="card shadow-sm">
+                                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab2.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                                        <h2 class="nombre-hotel">Hotel Chicamocha</h2>                                            
+                                        <div class="estrellas"><img src="img/iconos/estrellas_5.png" alt=""></div>
+                                        <div class="card-body"> 
+                                            <h3 class="precio">$172.000</h3>
+                                            <p class="precio-anexo">*precio por noche</p>
+                                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <div class="card shadow-sm">
+                                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                                        <h2 class="nombre-hotel">Hotel La Serranía</h2>                                            
+                                        <div class="estrellas"><img src="img/iconos/estrellas_4.png" alt=""></div>
+                                        <div class="card-body"> 
+                                            <h3 class="precio">$180.000</h3>
+                                            <p class="precio-anexo">*precio por noche</p>
+                                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <div class="card shadow-sm">
+                                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                                        <h2 class="nombre-hotel">Dann Carlton Bucaramanga</h2>                                            
+                                        <div class="estrellas"><img src="img/iconos/estrellas_4.png" alt=""></div>
+                                        <div class="card-body"> 
+                                            <h3 class="precio">$300.000</h3>
+                                            <p class="precio-anexo">*precio por noche</p>
+                                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <div class="card shadow-sm">
+                                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                                        <h2 class="nombre-hotel">Hampton Inn Bucaramanga Colombia</h2>                                            
+                                        <div class="estrellas"><img src="img/iconos/estrellas_2.png" alt=""></div>
+                                        <div class="card-body"> 
+                                            <h3 class="precio">$284.000</h3>
+                                            <p class="precio-anexo">*precio por noche</p>
+                                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <div class="card shadow-sm">
+                                        <div class="f-h-p"><img src="img/fotos_habitaciones/hab1.jpeg" alt="habitacion1" class="foto-habitacion"></div>
+                                        <h2 class="nombre-hotel">Hotel San Juan Internacional</h2>                                            
+                                        <div class="estrellas"><img src="img/iconos/estrellas_1.png" alt=""></div>
+                                        <div class="card-body"> 
+                                            <h3 class="precio">$202.000</h3>
+                                            <p class="precio-anexo">*precio por noche</p>
+                                            <a href="#" class="BotonRegistro">Hacer reserva</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        
 
     </hgroup>
     <footer id="footer">
         <p class="annio">2021</p>
         <p>® Copyright todos los derechos reservados</p>
-        <small>Realizado por CODERS MisiónTIC2022</small>
+        <a href="https://github.com/LordEmpos/Proyecto_web_G2" target="_blank"><small>Realizado por CODERS MisiónTIC2022</small></a>
     </footer>    
     
     <script src="js/bootstrap.bundle.js"></script>

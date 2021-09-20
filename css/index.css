@@ -16,7 +16,7 @@ hgroup{padding: 3px 0;}
 #busqueda{
     text-align: center;
     background-color: #2b2b2b;
-    padding: 25px 15px 15px;
+    padding: 25px 20px 0px;
     height: auto;
     width: auto;
     margin-left: auto;
@@ -32,11 +32,11 @@ hgroup{padding: 3px 0;}
     border-radius: 20px;
 }
 .welcome-text{
-    font: bold 18px Arial, Helvetica, 'sans-serif';
+    font: bold 20px Arial, Helvetica, 'sans-serif';
     color: white;
 }
 .buscar-titulo{
-    font: normal 13px Arial, Helvetica, 'sans-serif' !important;
+    font: normal 15px Arial, Helvetica, 'sans-serif' !important;
     color: white;
 }
 .boton-buscar{
@@ -45,7 +45,7 @@ hgroup{padding: 3px 0;}
     padding: 5px 15px;
     border: none;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 15px;
     cursor: pointer;
 }
 .boton-buscar:hover{
@@ -58,33 +58,55 @@ hgroup{padding: 3px 0;}
     text-align: center;
 }
 .resultadostitulo{
-    font: normal 15px Arial, Helvetica, 'sans-serif';
+    font: normal 17px Arial, Helvetica, 'sans-serif';
     color: white;
     background-color: rgb(26,41,61);
     background: linear-gradient(90deg, rgba(26,41,61,1) 0%, rgba(117,25,129,1) 61%, rgba(161,4,150,1) 100%);
-    padding: 5px;
+    padding: 8px;
+    border-radius: 25px;
 }
 .lista-resultados{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: auto;
+    padding: 10px !important;
 }
-.resultado-hotel{
-    position: relative;
-    display: inline-block;
-    height: auto;
-    background-color: white;
-    vertical-align: top;
-    padding: 10px;
+.card{
+    padding: 1px !important;
+}
+.card:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495) !important;
 }
 .f-h-p{width: 100%;}
 .foto-habitacion{
     width: 100%;
     height: auto;
 }
-
+.nombre-hotel{
+    font: normal 15px Arial, Helvetica, 'sans-serif';
+    color: white;
+    padding: 10px;
+    background-color: #1a293d ;
+}
+.estrellas{
+    width: 100%;
+}
+.estrellas img{
+    width: 120px;
+}
+.precio{
+    font: bold 18px Arial, Helvetica, 'sans-serif';
+}
+.precio-anexo{
+    font: normal 11px Arial, Helvetica, 'sans-serif';
+}
+.BotonOrdenar{
+    padding: 5px 15px !important;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a293d;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+.BotonOrdenar:hover{background-color: #661b77; color: white;}
 
 /* RESPONSIVE HOME */
 
@@ -95,11 +117,17 @@ hgroup{padding: 3px 0;}
 
 /* Celulares */
 @media screen and (max-width: 400px){
+    #busqueda{
+        padding: 25px 20px 20px;
+    }
     .barra-busqueda{
         width: 100%;
         margin: 20px 0px;
     }
     .buscar-form{
         padding: 0;
+    }
+    .resultadostitulo{
+        margin: 0 15px;
     }
 }
