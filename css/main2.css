@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{text-decoration: none !important; color: #212121;}
+a:hover{color: #000;}
+body{
+    background-color: rgb(210, 210, 210) !important;
+}
+nav{position: fixed !important; top: 0 !important; z-index: 1000 !important;}
+.logo-navbar{
+    width: 100%;
+    background-color: #1a293d;
+    text-align: center;
+    padding: 5px 0;
+}
+.logo{
+    width: auto;
+    height: 65px;
+}
+.container-mobile{
+    padding: 0 !important;
+}
+.contenedor{
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+}
+#navbarsItems{
+    width: 100%;
+    float: right !important;
+
+}
+.BotonMenu{
+    list-style: none;
+    font: normal 13px Arial, Helvetica, 'sans-serif';
+    background-color: #172639;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    border: solid 1px #2e4463;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.BotonMenu:hover{
+    background-color: #152132;
+    border: solid 1px #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
+}
+.BotonMenu a{
+    color: white;
+    text-decoration: none;   
+}
+.BotonMenu a:hover{
+    color: white;
+}
+.BotonMenuActivo{
+    background-color: #152132;
+    border: solid 1px #fff;
+}
+hgroup{
+    margin-top: 90px;
+    height: auto;
+    padding: 20px 0;
+}
+footer{
+    width: 100%; 
+    padding: 20px;
+    background-color: #1a293d;
+    color: white;
+    text-align: center;
+    font: normal 13px Arial, Helvetica, 'sans-serif';
+    bottom: 0;
+}
+footer p{
+    margin: 3px;
+}
+.annio{font-size: 14px;}
+.BotonRegistro{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a293d;
+    cursor: pointer;
+    color: white;
+}
+.BotonRegistro:hover{background-color: #661b77; color: white;}
+li{list-style:none; margin: 0;}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* RESPONSIVE MAIN */
+    /* Celulares */
+    @media screen and (max-width: 800px){
+        .logo-navbar{
+            padding: 10px 15px;
+        }
+        .logo{
+            max-width: 250px;
+            height: auto;
+        }
+        #navbarsItems{
+            padding: 15px 0 0;
+        }
+        .BotonMenu{
+            font: normal 16px Arial, Helvetica, 'sans-serif';
+            display: block;
+            padding: 10px 15px;
+            margin: 5px 0;
+        }
+        hgroup{
+            margin-top: 67px; 
+        }
+    }
