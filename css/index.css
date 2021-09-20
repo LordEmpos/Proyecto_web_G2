@@ -2,7 +2,7 @@ hgroup{padding: 3px 0;}
 
 .parallax-home{
     /* The image used */
-    background-image: url("/img/bucaramanga-parallax.jpeg");
+    background-image: url("../img/bucaramanga-parallax.jpeg");
     /* Set a specific height */
     min-height: auto;
     /* Create the parallax scrolling effect */
