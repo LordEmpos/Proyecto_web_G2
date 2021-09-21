@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/historial.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 <body>
     <header>
@@ -26,13 +27,23 @@
     </header>
     <hgroup>
         <div class="contenedor">
-            <div class="historial">
-                <h1 class="historial-titulo">
-                    ¡Historial de reservas!<br><br>
-                </h1>
-                <form action="">
-                    <p>Desde: <input class="fechadesde" type="date" name="desde" placeholder="Desde"></p><br/>    
-                    <p>Hasta: <input class="fechahasta" type="date" name="hasta" placeholder="Hasta"></p><br/>
+            <div class="row">
+
+                <div class="col-6">
+                    <h1 class="historial-titulo">
+                        ¡Historial de reservas!<br><br>
+                    </h1>
+                </div>
+                <div> 
+                                      
+                   <p> Desde: <input class="fechadesde" type="date" name="desde" placeholder="Desde" > 
+                
+                    Hasta: <input class="fechahasta" type="date" name="hasta" placeholder="Hasta" ></p><br/>
+                </div>         
+
+            </div>
+                    
+                   
                     <p><input class="botonbuscar" type="submit" value="Buscar" onclick="cambiarColor(this.tablahistorial)"> 
                         
                         <div>
@@ -73,12 +84,8 @@
                     </p><br/>
                    
 
-                    
-                </form>
                 
-                
-
-            </div>
+            
         </div>
     </hgroup>
     <footer id="footer">
