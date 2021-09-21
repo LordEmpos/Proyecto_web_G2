@@ -12,18 +12,10 @@
     height: 100%;
     border-style: solid;
     border-radius: 1em;
-    padding: 20px;    
+    padding: 30px;    
 }
 #seccion{
     height: 50%;    
-}
-.campoTexto{
-    height: 17px;
-    width: 200px;
-    margin: 3px 10px;
-    padding: 3px;
-    text-align: left;
-    font-size: 12px;    
 }
 .campDoc{margin-left: 59px;}
 .campNom{margin-left: 70px;}
@@ -41,4 +33,13 @@
 }
 .datosEncabezado,.datosContenido{
     margin: 5px;
+}
+@media screen and (max-width: 800px){
+.campDoc{margin-left: 0px;}
+.campNom{margin-left: 0px;}
+.campApe{margin-left: 0px;}
+.campCorr{margin-left: 0px;}
+.campCla1{margin-left: 0px;}
+.campFecha{margin-left: 0px;}
+.Actualizar{padding: 8px;}
 }
