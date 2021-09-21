@@ -7,13 +7,14 @@
     <title>Bucarhotel.com - Historial</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main2.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">          
+    <!-- <link rel="stylesheet" href="css/index.css" type="text/css">           -->
     <link rel="stylesheet" href="css/historial.css" type="text/css">
     
 </head>
 <body>
   
-     <header>
+    <header>
+
         <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
             <div class="container container-mobile">
                 <a href="index.html"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
@@ -34,73 +35,76 @@
     </header>
 
     <hgroup>
-        <div class="contenedor">
-            <div class="container-fluid p-0 h-100 mb-3">
-
-                <h1 class="historial-titulo">
-                    ¡Historial de reservas!<br><br>
-                </h1>
-            </div>  
-
-            <div>
-                                      
-                <p> Desde: <input class="fechadesde" type="date" name="desde" placeholder="Desde" > </p>
-                
-                <p> Hasta: <input class="fechahasta" type="date" name="hasta" placeholder="Hasta" ></p><br/>
-                     
-
-            </div>
-                    
-                   
-                    <p><input class="botonbuscar" type="button" value="Buscar" > 
-                        
-                        <div>
-                            <h2> Resultados (simulacro)</h2>
-                            <br/>
-                            <table class="tablahistorial" >
-                                <colgroup span="4"></colgroup>
-                                <tr>
-                                    <th class="fechaInicio">FECHA INICIO</th>
-                                    <th class="fechaFin">FECHA FIN</th>
-                                    <th class="tipo"> TIPO HABITACIÓN</th>
-                                    <th class="valor">VALOR</th>
-                                    <th class="estado">ESTADO</th>
-                                    <th class="ver">VER</th>
-                                </tr>
-                                <tr>
-                                    <td class="fechaInicio"> 01/06/2000</td>
-                                    <td class="fechaFin"> 15/06/2000</td>
-                                    <td> Individual</td>
-                                    <td class="valor"> $100.000</td>
-                                    <td> Disponible <br/><a href="../index.html"> <input class="botonReserva" type="button" value="Reservar"></a></td>
-                                    <td> <a href="https://static.abc.es/Media/201504/27/hotel12--644x362.jpg"><img src="https://static.abc.es/Media/201504/27/hotel12--644x362.jpg" width="100" height="100" alt="Individual"></a> </td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td class="fechaInicio"> 01/01/2010</td>
-                                    <td class="fechaFin"> 01/15/2010</td>
-                                    <td> Doble</td>
-                                    <td class="valor"> $180.000</td>
-                                    <td> No disponible</td>
-                                    <td> <a href="https://www.estelarenaltoprado.com/cache/ed/0e/ed0e592be0b63955cd79f4ebb0c557ea.jpg"><img src="https://www.estelarenaltoprado.com/cache/ed/0e/ed0e592be0b63955cd79f4ebb0c557ea.jpg" width="100" height="100" alt="Doble"></a></td>
-                                    
-                                </tr>
-                            </table>
-                        </div><br> <br/>
-
-
-                    </p><br/>
-                   
-
-                
+        <div class="container-fluid p-0 h-100 mb-3" >
+        <div class="parallax-home">
             
+            <div class="container">
+                <div class="contenedor">
+                    <div class="container-fluid p-0 h-100 mb-3">
+
+                        <h1 class="historial-titulo">
+                           <b> ¡Historial de reservas!</b><br>
+                        </h1>
+                    </div>          
+                    <div class="fechas">                                              
+                        <p> Desde: <input class="fechadesde" type="date" name="desde" placeholder="Desde" > </p>
+                        
+                        <p> Hasta: <input class="fechahasta" type="date" name="hasta" placeholder="Hasta" ></p><br/>
+                    </div>
+                    <p><input class="botonbuscar" type="button" value="Buscar" > </p>
+
+
+                </div>
+            </div>
+        </div>    
         </div>
+
+        <div class="contenedor">
+            <h2> Resultados (simulacro)</h2> <br/>
+        </div>
+            <div class="container-fluid p-0 h-100 mb-3 text-align:center" >
+                
+                <table class="tablahistorial" >
+                    <!-- <colgroup span="4"></colgroup> -->
+                    <tr>
+                        <th class="fechaInicio">FECHA INICIO</th>
+                        <th class="fechaFin">FECHA FIN</th>
+                        <th class="tipo"> TIPO HABITACIÓN</th>
+                        <th class="valor">VALOR</th>
+                        <th class="estado">ESTADO</th>
+                        <th class="ver">VER</th>
+                    </tr>
+                    <tr>
+                        <td class="fechaInicio"> 01/06/2000</td>
+                        <td class="fechaFin"> 15/06/2000</td>
+                        <td> Individual</td>
+                        <td class="valor"> $100.000</td>
+                        <td> <a href="../index.html"> <input class="botonReserva" type="button" value="Reservar"></a></td>
+                        <td> <a href="https://static.abc.es/Media/201504/27/hotel12--644x362.jpg"><img src="https://static.abc.es/Media/201504/27/hotel12--644x362.jpg" width="100" height="100" alt="Individual"></a> </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="fechaInicio"> 01/01/2010</td>
+                        <td class="fechaFin"> 01/15/2010</td>
+                        <td> Doble</td>
+                        <td class="valor"> $180.000</td>
+                        <td> No disponible</td>
+                        <td> <a href="https://www.estelarenaltoprado.com/cache/ed/0e/ed0e592be0b63955cd79f4ebb0c557ea.jpg"><img src="https://www.estelarenaltoprado.com/cache/ed/0e/ed0e592be0b63955cd79f4ebb0c557ea.jpg" width="100" height="100" alt="Doble"></a></td>
+                        
+                    </tr>
+                </table>
+            </div>
+            <br> <br/>
+
     </hgroup>
-    <footer id="footer">
-        <p class="annio">2021</p>
-        <p>® Copyright todos los derechos reservados</p>
-        <small>Realizado por CODERS MisiónTIC2022</small>
-    </footer> 
+    <div class="container-fluid p-0 h-100 mb-3 text-align:center" >
+        <footer>
+            <p>2021</p>
+            <p>® Copyright todos los derechos reservados</p>
+            <small>Realizado por CODERS MisiónTIC2022</small>
+        </footer>
+    </div>
+     
     
 </body>
    
