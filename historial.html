@@ -4,47 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historial</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <title>Bucarhotel.com - Historial</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main2.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">          
     <link rel="stylesheet" href="css/historial.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    
 </head>
 <body>
-    <header>
-        <div class="logo-navbar"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel"></div>
-            <nav>
-                <div class="contenedor">
-                    <ul class="menu">
-                        <li class=" BotonMenu"><a href="index.html">Busca hotel</a></li>
-                        <li class="BotonMenu BotonMenuActivo"><a href="#">Historial de reservas</a></li>
+  
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
+            <div class="container container-mobile">
+                <a href="index.html"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>        
+                <div class="collapse navbar-collapse" id="navbarsItems">
+                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                        <li class="BotonMenu "><a href="index.html">Buscar hotel</a></li>
+                        <li class="BotonMenu BotonMenuActivo"><a href="#">Historial de reservas</a></li>                        
                         <li class="BotonMenu"><a href="registro.html">Regístrate</a></li>
                         <li class="BotonMenu"><a href="login.html">Ingresa</a></li>
-                        <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>              
-                    </ul>            
+                        <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>    
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
+
     <hgroup>
         <div class="contenedor">
-            <div class="row">
+            <div class="container-fluid p-0 h-100 mb-3">
 
-                <div class="col-6">
-                    <h1 class="historial-titulo">
-                        ¡Historial de reservas!<br><br>
-                    </h1>
-                </div>
-                <div> 
+                <h1 class="historial-titulo">
+                    ¡Historial de reservas!<br><br>
+                </h1>
+            </div>  
+
+            <div>
                                       
-                   <p> Desde: <input class="fechadesde" type="date" name="desde" placeholder="Desde" > 
+                <p> Desde: <input class="fechadesde" type="date" name="desde" placeholder="Desde" > </p>
                 
-                    Hasta: <input class="fechahasta" type="date" name="hasta" placeholder="Hasta" ></p><br/>
-                </div>         
+                <p> Hasta: <input class="fechahasta" type="date" name="hasta" placeholder="Hasta" ></p><br/>
+                     
 
             </div>
                     
                    
-                    <p><input class="botonbuscar" type="submit" value="Buscar" onclick="cambiarColor(this.tablahistorial)"> 
+                    <p><input class="botonbuscar" type="button" value="Buscar" > 
                         
                         <div>
                             <h2> Resultados (simulacro)</h2>
@@ -52,27 +60,27 @@
                             <table class="tablahistorial" >
                                 <colgroup span="4"></colgroup>
                                 <tr>
-                                    <th>FECHA INICIO</th>
-                                    <th>FECHA FIN</th>
-                                    <th>HABITACIÓN</th>
-                                    <th>VALOR</th>
-                                    <th>ESTADO</th>
-                                    <th>VER</th>
+                                    <th class="fechaInicio">FECHA INICIO</th>
+                                    <th class="fechaFin">FECHA FIN</th>
+                                    <th class="tipo"> TIPO HABITACIÓN</th>
+                                    <th class="valor">VALOR</th>
+                                    <th class="estado">ESTADO</th>
+                                    <th class="ver">VER</th>
                                 </tr>
                                 <tr>
-                                    <td> 01/06/2000</td>
-                                    <td> 15/06/2000</td>
+                                    <td class="fechaInicio"> 01/06/2000</td>
+                                    <td class="fechaFin"> 15/06/2000</td>
                                     <td> Individual</td>
-                                    <td> 80000</td>
-                                    <td> <a href="../index.html">Disponible <br/> (Reservar)</a></td>
+                                    <td class="valor"> $100.000</td>
+                                    <td> Disponible <br/><a href="../index.html"> <input class="botonReserva" type="button" value="Reservar"></a></td>
                                     <td> <a href="https://static.abc.es/Media/201504/27/hotel12--644x362.jpg"><img src="https://static.abc.es/Media/201504/27/hotel12--644x362.jpg" width="100" height="100" alt="Individual"></a> </td>
                                     
                                 </tr>
                                 <tr>
-                                    <td> 01/01/2010</td>
-                                    <td> 01/15/2010</td>
+                                    <td class="fechaInicio"> 01/01/2010</td>
+                                    <td class="fechaFin"> 01/15/2010</td>
                                     <td> Doble</td>
-                                    <td> 120000</td>
+                                    <td class="valor"> $180.000</td>
                                     <td> No disponible</td>
                                     <td> <a href="https://www.estelarenaltoprado.com/cache/ed/0e/ed0e592be0b63955cd79f4ebb0c557ea.jpg"><img src="https://www.estelarenaltoprado.com/cache/ed/0e/ed0e592be0b63955cd79f4ebb0c557ea.jpg" width="100" height="100" alt="Doble"></a></td>
                                     
@@ -95,4 +103,5 @@
     </footer> 
     
 </body>
+   
 </html>

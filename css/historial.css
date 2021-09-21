@@ -9,7 +9,7 @@
     padding: 10px;
 } 
 
-.botonbuscar{
+.botonbuscar,.botonReserva{
     padding: 8px 15px;
     border-radius: 20px;
     border: none;
@@ -17,7 +17,7 @@
     cursor: pointer;
     color: white;
 }
-.botonbuscar:hover{
+.botonbuscar:hover, .botonReserva:hover{
     background-color: #661b77;
 }
 
@@ -27,5 +27,51 @@
     border-radius: 15px;
     padding: 5px;
     text-align: center;
+    
+}
+
+@media screen and (max-width: 400px){
+    .logo-navbar{
+        padding: 10px 15px;
+    }
+    .logo{
+        max-width: 250px;
+        height: auto;
+    }
+    #navbarsItems{
+        padding: 15px 0 0;
+    }
+    .BotonMenu{
+        font-size: normal 16px Arial, Helvetica, 'sans-serif';
+        display: block;
+        padding: 10px 15px;
+        margin: 5px 0;
+        
+    }
+    .BotonRegistro{
+        font-size: 16px !important;
+    }
+    hgroup{
+        margin-top: 67px; 
+    }
+    .tablahistorial{
+        margin-top: 67px;
+    }
+    
+    .fechaInicio,.fechaFin,.valor{
+        display: none;
+    }
+    
+    
+}
+
+th{
+    background-color: #e405d5;
+    color: white;
+    
+}
+tr{
+    background-color: #1a293d;
+    color: white;
     
 }
