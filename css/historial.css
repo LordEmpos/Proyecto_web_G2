@@ -17,4 +17,15 @@
     cursor: pointer;
     color: white;
 }
-.botonbuscar:hover{background-color: #661b77;}
+.botonbuscar:hover{
+    background-color: #661b77;
+}
+
+.fechadesde, .fechahasta{
+    
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    
+}
