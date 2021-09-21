@@ -2,7 +2,9 @@
     text-align: center; 
 }
 .Volver{
-    color: blue;
+    color: #e405d5;
+    font-weight: bolder;
+    
 }
 .BotonRecuperar{
     padding: 15px 25px;
@@ -20,4 +22,23 @@
     border: none;
     width: 350px;
     border-radius: 20px;
+}
+.parallax-recuperacion{
+    background-image: url("../img/bucaramanga-parallax.jpeg");
+    min-height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    margin: 0;
+}
+.formularioRecuperacion{
+    color: blanchedalmond;
+    text-align: center;
+    background-color: #2b2b2b;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-right: 350px;
+    margin-left: 350px;
 }

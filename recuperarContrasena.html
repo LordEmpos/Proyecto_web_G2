@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/RecuperarContrasena.css" type="text/css">
     <title>recuperarContrasena</title>
 </head>
 <body>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <header>
-        <div class="logo-navbar">
-            <img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel">
-        </div>
-        <nav>
-            <div class="contenedor">
-                <ul class="menu">
-                    <li class=" BotonMenu"><a href="index.html">Busca hotel</a></li>
-                    <li class="BotonMenu"><a href="historial.html">Historial de reservas</a></li>
-                    <li class="BotonMenu"><a href="registro.html">Regístrate</a></li>
-                    <li class="BotonMenu"><a href="login.html">Ingresa</a></li>
-                    <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>
-                
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
+            <div class="container container-mobile">
+                <a href="#"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>        
+                <div class="collapse navbar-collapse" id="navbarsItems">
+                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                        <li class="BotonMenu"><a href="index.html">Buscar hotel</a></li>
+                        <li class="BotonMenu"><a href="historial.html">Historial de reservas</a></li>
+                        <li class="BotonMenu"><a href="registro.html">Regístrate</a></li>
+                        <li class="BotonMenu BotonMenuActivo"><a href="login.html">Ingresa</a></li>
+                        <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>    
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <hgroup>
-        <div class="recuperacion">
-            <div id="recuperar"><br>
-                <H1>¿Has olvidado tu contraseña?</H1><br>
-                <p>Por favor ingresa el correo electrónico asociado a tu cuenta<br>
-                     para enviarte un vínculo y que puedas restablecer tu contraseña</p><br><br>
-                <input  class="Ingresocorreo" type="text" value="" name="usuario" placeholder="Correo electrónico"><br><br>
-                <input class="BotonRecuperar" type="submit"  name="" value="Recuperar"><br><br>
-                <p><a class="Volver" href="login.html">Volver</a></p>
-            </div>
+        <div class="parallax-recuperacion"> 
+            <div class="formularioRecuperacion">
+               <div class="recuperacion">
+                <div id="recuperar"><br>
+                    <H1>¿Has olvidado tu contraseña?</H1><br>
+                    <p>Por favor ingresa el correo electrónico asociado a tu cuenta<br>
+                        para enviarte un vínculo y que puedas restablecer tu contraseña</p><br><br>
+                    <input  class="Ingresocorreo" type="text" value="" name="usuario" placeholder="Correo electrónico"><br><br>
+                    <input class="BotonRecuperar" type="submit"  name="" value="Recuperar"><br><br>
+                    <p><a class="Volver" href="login.html">Volver</a></p>
+                </div>
+            </div> 
         </div>
+        
+
     </hgroup>
     <footer id="footer">
         <p class="annio">2021</p>

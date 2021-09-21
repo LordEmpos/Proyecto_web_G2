@@ -5,44 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario login</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/login.css" type="text/css">
 </head>
-<body>
+<body class="text-center">
+    <script src="js/bootstrap.bundle.min.js"></script>
     <header>
-        <div class="logo-navbar">
-            <img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel">
-        </div>
-        <nav>
-            <div class="contenedor">
-                <ul class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
+            <div class="container container-mobile">
+                <a href="#"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>        
+                <div class="collapse navbar-collapse" id="navbarsItems">
+                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
                     <li class="BotonMenu"><a href="index.html">Busca hotel</a></li>
                     <li class="BotonMenu"><a href="historial.html">Historial de reservas</a></li>
                     <li class="BotonMenu"><a href="registro.html">Regístrate</a></li>
                     <li class="BotonMenu BotonMenuActivo"><a href="ajustesPerfil.html">Ingresa</a></li>
                     <li class="BotonMenu"><a href="ajustesPerfil.html">Perfil</a></li>
-                
-                </ul>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
+    <div class="parallax-login">
+        <div class="FormularioLogin">
+            <div class="credenciales">
+                <div class="login">
+                    <h1 class=" welcom-text">Ingresa tus credenciales</h1><br>
+                    <div class="form-floating">
+                        <input class="IngresoCredenciales form-control" id="floatingInput" type="email" value="" name="Usuario" ><br><br>
+                        <label for="floatingInput">Correo electrónico o usuario</label>
+                    </div>
+                    
 
-    <div class="credenciales">
-        <div class="login">
-            <br>
-            <h1>Ingresa tus credenciales</h1><br><br>
-            <input class="IngresoCredenciales" type="text" value="" name="Usuario" placeholder="Correo electrónico o usuario"><br><br>
-            <input class="IngresoCredenciales" type="password" value="" name="contrasena" placeholder="Contraseña"><br><br>
-            <p><a class="link" href="recuperarContrasena.html">¿Olvidaste tu contraseña?</a></p><br>
-            
-            <input class="BotonIngreso" type="submit"  name="" value="Ingresar"><br><br>
-            
-            <br>
-            <p>¿No estás registrado?<a class="link"  href="registro.html">  Registrate aquí</a></p>
-            
+                    <div class="form-floating">                   
+                        <input class="IngresoCredenciales form-control" id="floatingPassword" type="password" value="" name="contrasena" placeholder="Contraseña"><br>
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
+
+               
+
+
+
+                    <div class="checkbox mb-3">
+                        <label>
+                          <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                      </div><p><a class="link" href="recuperarContrasena.html">¿Olvidaste tu contraseña?</a></p><br>
+                    
+                    <input class="BotonIngreso w-100 btn btn-lg btn-primary" type="submit"  name="" value="Ingresar"><br>
+                  
+                    <p>¿No estás registrado?<a class="link"  href="registro.html">  Registrate aquí</a></p>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-</div>
     <footer id="footer">
         <p class="annio">2021</p>
         <p>® Copyright todos los derechos reservados</p>
