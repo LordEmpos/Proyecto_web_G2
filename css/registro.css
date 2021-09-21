@@ -26,6 +26,10 @@
     width: 250px;      
     border-radius: 20px;  
 }
+.centrar{
+    text-align: center;
+}
+
 .campDoc{margin-left: 59px;}
 .campNom{margin-left: 72px;}
 .campApe{margin-left: 75px;}
@@ -33,3 +37,13 @@
 .campCla1{margin-left: 58px;}
 .campCla2{margin-left: 58px;}
 .campFecha{margin-left: 10px;}
+
+@media screen and (max-width: 800px){
+    .campDoc{margin-left: 0px;}
+    .campNom{margin-left: 0px;}
+    .campApe{margin-left: 0px;}
+    .campCorr{margin-left: 0px;}
+    .campCla1{margin-left: 0px;}
+    .campCla2{margin-left: 0px;}
+    .campFecha{margin-left: 0px;}
+}
