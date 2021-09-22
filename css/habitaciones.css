@@ -68,6 +68,12 @@ hgroup{padding: 3px 0;}
     width: 100%;
     height: auto;
 }
+
+.f-hab{
+    width: 300px;
+    height: 180px;
+}
+
 .nombre-hotel{
     font: normal 15px Arial, Helvetica, 'sans-serif';
     color: white;
@@ -86,46 +92,19 @@ hgroup{padding: 3px 0;}
 .descripcion-anexo{
     font: normal 14px Arial, Helvetica, 'sans-serif';
 }
-.BotonFiltrar{
-    margin-top: -20px !important;
-    padding: 5px 25px !important;
-    border-radius: 20px;
-    border: none;
-    background-color: #1a293d;
-    cursor: pointer;
-    color: white;
-    font-size: 15px;
+.card-text{
+    font: normal 14px Arial, Helvetica, 'sans-serif';
 }
-.BotonFiltrar:hover{background-color: #661b77; color: white;}
-.filter-select-text{
-    font-size: 14px;
-    background-color: #676767;
-    padding: 8px 15px;
-    color: white;
-}
-.filtrar-box{
-    margin-top: 15px;
-    padding: 0 !important;
-}
-.filtrar-titulo{
-    background-color: #1a293d;
-    color: white;
-    padding: 5px 15px;
-    margin: 0;
 
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
 }
-.filtrar-form select{
-    border: none;
-    width: 100%;
-    height: 193px;
-}
-.filtrar-form select option{
-    padding: 9px;
-    text-align: center;
-}
+
+
 
 /* RESPONSIVE HOME */
-/* Celulares */
+
 @media screen and (max-width: 400px){
     #busqueda{
         padding: 25px 20px 20px;
@@ -152,12 +131,5 @@ hgroup{padding: 3px 0;}
     .lista-resultados{
         padding: 20px 10px 20px 20px !important;
     }
-    .filtrar-box{
-        padding: 0 15px !important;
-    }
-    .BotonFiltrar, .boton-buscar{
-        font-size: 16px;
-    }
-
 
 }
