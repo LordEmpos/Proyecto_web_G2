@@ -17,6 +17,7 @@
     align-content: center;
     border: 3px solid black;
     border-collapse: collapse;
+    padding: 5px;
    }
 
 
@@ -48,7 +49,7 @@
 }
 
 @media screen and (max-width: 800px){
-    /* .logo-navbar{
+    .logo-navbar{
         padding: 10px 15px;
     }
     .logo{
@@ -57,7 +58,7 @@
     }
     #navbarsItems{
         padding: 15px 0 0;
-    } */
+    }
     .BotonMenu{
         font-size: normal 16px Arial, Helvetica, 'sans-serif';
         display: block;
