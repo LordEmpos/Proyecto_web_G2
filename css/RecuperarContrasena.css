@@ -43,3 +43,19 @@
     margin-right: 350px;
     margin-left: 350px;
 }
+@media screen and (max-width: 800px){
+    .formularioRecuperacion{
+        margin-right: 10px;
+        margin-left: 10px; 
+    }
+    .BotonRecuperar{
+        padding: 8px 15px;
+        margin-bottom: 20px;                                
+        margin-top: 0px;
+        height: auto;
+        width: auto !important;
+    }
+    .Ingresocorreo{
+        width: 200px;
+    }
+}
