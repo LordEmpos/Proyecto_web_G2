@@ -29,7 +29,10 @@
 .centrar{
     text-align: center;
 }
-
+#footer{
+    bottom: 0px !important;
+    position: absolute;
+}
 .campDoc{margin-left: 59px;}
 .campNom{margin-left: 72px;}
 .campApe{margin-left: 75px;}
@@ -46,4 +49,7 @@
     .campCla1{margin-left: 0px;}
     .campCla2{margin-left: 0px;}
     .campFecha{margin-left: 0px;}
+    #footer{
+        position: relative !important;
+    }
 }

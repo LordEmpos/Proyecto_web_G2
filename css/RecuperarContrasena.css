@@ -34,9 +34,10 @@
     margin: 0;
 }
 .formularioRecuperacion{
-    color: blanchedalmond;
+    color: black;
     text-align: center;
-    background-color: #2b2b2b;
+    background-color: rgb(210, 210, 210);
+   
     margin-top: 0px;
     margin-bottom: 100px;
     margin-right: 350px;
