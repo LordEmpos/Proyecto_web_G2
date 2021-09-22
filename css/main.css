@@ -43,7 +43,7 @@ nav{
 }
 .BotonMenu a{
     color: white;
-    text-decoration: none;   
+    text-decoration: none;
 }
 .BotonMenu a:hover{
     color: white;
@@ -56,14 +56,20 @@ hgroup{
     padding: 20px 0;
 }
 footer{
-    width: 100%; 
-    padding: 20px;
+    width: 100%;
+    padding: 20px 20px 35px;
     background-color: #1a293d;
     color: white;
     text-align: center;
-    font: normal 13px Arial, Helvetica, 'sans-serif';
+    font: normal 15px Arial, Helvetica, 'sans-serif';
     position: fixed;
     bottom: 0;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #e405d5;
 }
 footer p{
     margin: 3px;
@@ -76,6 +82,7 @@ footer p{
     background-color: #1a293d;
     cursor: pointer;
     color: white;
+    font-size: 15px;
 }
 .BotonRegistro:hover{background-color: #661b77; color: white;}
 li{list-style:none; margin: 0;}

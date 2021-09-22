@@ -7,7 +7,7 @@
     <title>Bucarhotel.com - Inicio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main2.css" type="text/css"> <!-- main css implementando Bootstrap -->
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/habitaciones.css" type="text/css">
 </head>
 <body>
     <!-- CODERS: Este es el código del HEADER con la Navbar implementando Bootstrap y responsive -->
@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
             <div class="container container-mobile">
-                <a href="#"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+                <a href="index.html"><img src="img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,43 +34,29 @@
     <!-- Fin  -->
 
     <hgroup>
-        <div class="parallax-home">
-            <div class="container">
-                <div class="row">
-                    <div id="busqueda">
-                        <p class="welcome-text">¡Bienvenido a Bucaramanga viajero!</p>
-                        <h1 class="buscar-titulo">
-                            En <strong>Bucarhotel.com</strong> en tan sólo un par de pasos puedes encontrar el mejor hotel en la ciudad de Bucaramanga para tí. <br>
-                            ¡Es fácil!, tú solamente ingresa los datos y nosotros nos encargamos del resto
-                        </h1>
-                        <form action="" class="buscar-form">
-                            <input type="text" name="buscar" placeholder="Ingresa los datos para tu búsqueda" class="barra-busqueda">
-                            <input type="submit" value="Buscar" class="boton-buscar">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="container" id="resultados">
             <div class="resultadostitulo">Encontramos estas opciones que podrían interesarte</div>
             <div class="row row-custom">
                 <div class="col-md-3 col-xs-12">
                     <div class="filtrar-box position-sticky" style="top: 110px">
-                        <div>
-                            <p class="filter-select-text">Selecciona con la tecla control sostenida las opciones a filtrar, luego haz clic en el botón.</p>
-                            <p class="filtrar-titulo">Filtrar resultados por:</p>
-                            <form action="" class="filtrar-form">
-                                <select class="form-select" multiple aria-label="multiple select example">
-                                    <option value="precioMasBajo">Precio más bajo</option>
-                                    <option value="recomendados">Recomendados</option>
-                                    <option value="mejorPuntuados">Mejor puntuados</option>
-                                    <option value="masBuscados">Más buscados</option>
-                                    <option value="mascotas">Admite mascotas</option>
-                                </select><br>
-
-                                <input type="submit" value="Filtrar" class="BotonFiltrar">
-                            </form>
+                        <div class="card shadow-sm">
+                            <div class="f-h-p"><img src="img/fotos_habitaciones/Hotel1.jpg" alt="habitacion1" class="foto-habitacion"></div>
+                            <h2 class="nombre-hotel">Hotel Chicamocha</h2>
+                            <div class="estrellas"><img src="img/iconos/estrellas_5.png" alt=""></div>
+                            <div class="card-body">
+                                <h6 class="descripcion" align="center">El mejor hotel tradicional para viajeros
+                                  de negocios y vacacionales en la Ciudad de los Parques, Bucaramanga Colombia</h6>
+                                <p class="descripcion-anexo" align="justify">El Hotel está ubicado estratégicamente en el sector Mejoras Públicas de Bucaramanga,
+                                  rodeado de restaurantes, parques y a tan sólo 10 minutos del centro de la ciudad.
+                                  Cuenta con 160 habitaciones amplias que se destacan por su cómodo diseño convirtiéndolo en una opción perfecta,
+                                  ya sea para viajes de negocios como de placer.
+                                  El restaurante La Terraza ofrece una completa y exquisita cocina donde se puede disfrutar de la gastronomía típica regional,
+                                  complementada con nuevos platos internacionales tipo gourmet.
+                                  El hotel presenta su propio centro de congresos, con 7 salones versátiles,
+                                  un auditorio de 500 asientos y una capacidad total para atender 1.300 personas.</p>
+                                <a href="#" class="BotonRegistro">Hacer reserva</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +86,7 @@
                                         <div class="card-body">
                                             <h3 class="precio">$172.000</h3>
                                             <p class="precio-anexo">*precio por noche</p>
-                                            <a href="habitaciones.html" class="BotonRegistro">Hacer reserva</a>
+                                            <a href="#" class="BotonRegistro">Hacer reserva</a>
                                         </div>
                                     </div>
                                 </a>
