@@ -1,3 +1,16 @@
+.parallax-home{
+    /* The image used */
+    background-image: url("../img/bucaramanga-parallax.jpeg");
+    /* Set a specific height */
+    min-height: auto;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1%;
+    margin: 0;
+}
 .tablahistorial,th,td{
     
     margin: 0 auto 2em;
@@ -5,17 +18,16 @@
     border: 3px solid black;
     border-collapse: collapse;
    }
-   th,td{
-    padding: 10px;
-} 
+
 
 .botonbuscar,.botonReserva{
     padding: 8px 15px;
     border-radius: 20px;
     border: none;
-    background-color: #1a293d;
+    background-color: #681060;
     cursor: pointer;
     color: white;
+    box-shadow: 0 5px 30px 1px rgba(247, 246, 246, 0.384) ;
 }
 .botonbuscar:hover, .botonReserva:hover{
     background-color: #661b77;
@@ -27,11 +39,16 @@
     border-radius: 15px;
     padding: 5px;
     text-align: center;
+    color: rgb(185, 184, 184);
     
 }
 
-@media screen and (max-width: 400px){
-    .logo-navbar{
+.fechas{
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    /* .logo-navbar{
         padding: 10px 15px;
     }
     .logo{
@@ -40,22 +57,19 @@
     }
     #navbarsItems{
         padding: 15px 0 0;
-    }
+    } */
     .BotonMenu{
         font-size: normal 16px Arial, Helvetica, 'sans-serif';
         display: block;
         padding: 10px 15px;
         margin: 5px 0;
         
+        
     }
-    .BotonRegistro{
-        font-size: 16px !important;
-    }
-    hgroup{
-        margin-top: 67px; 
-    }
+    
     .tablahistorial{
-        margin-top: 67px;
+        margin-top: 10px;
+        padding: 10 px;
     }
     
     .fechaInicio,.fechaFin,.valor{
@@ -66,12 +80,14 @@
 }
 
 th{
-    background-color: #e405d5;
+    background-color: #661b77;
     color: white;
-    
+    padding: 3px;
+    text-align: center;
 }
 tr{
+    padding: 4px;
     background-color: #1a293d;
     color: white;
-    
+    text-align: center;
 }
