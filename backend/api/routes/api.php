@@ -22,6 +22,7 @@ use App\Http\Controllers\HabitacionController;
 Route::post('/Cliente/signup', [ClienteController::class, 'signup']);
 Route::post('/Cliente/login', [ClienteController::class, 'login']);
 Route::get('/habitacion/search', [HabitacionController::class, 'search']);
+Route::get('/habitacion/filter', [HabitacionController::class, 'filter']);
 
 /* Route::get('/habitacion/filter', [HabitacionController::class, 'filter']); */
 /* Route::post('/cliente/update', [ClienteController::class, 'update']);  */

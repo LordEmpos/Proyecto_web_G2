@@ -53,15 +53,33 @@ class ClienteController extends Controller
         }
         return array('token' => $token);
     } 
-}
-//}
 
-    /* public function update(Request $request){
-        
-    } */
+    public function update(Request $request){
+        /* $data = $request->all();
+        return Cliente::where('doc', '123456')->update($data); */
+
+        /* $data = $request->all();
+        $update= Cliente::where('doc', '123456')->update($data)!=0;
+        return array('update'=>$update); */
+
+        //NO FUNCIONO
+        /* return ($request->bearerToken());
+        $data = $request->all();
+        $updated = Cliente::where('doc', '123456')->update($data)!= 0;
+        $token = JWTAuth::getToken();
+        return array('updated'=>$updated,'token'=>$token); */
+
+        //CODIGO FINAL PARA UPDATE
+        $data = $request->all();
+        $data['clave'] = Hash::make($data['clave']);
+        $token = $request->bearerToken();
+        $doc = JWTAuth::getPayload($token)->toArray()['sub'];
+        $updated = Cliente::where('doc', $doc)->update($data) != 0;
+        return array('updated' => $updated);
+    }
 
     /* public function showAll(){
         return cliente::all();
     } */
 
-/* } */
+}
