@@ -52,7 +52,6 @@ class ClienteController extends Controller
             return response()->json(['error' => 'credenciales invalidas'], 400);
         }
         return array('token' => $token);
-
     } 
 }
 //}
