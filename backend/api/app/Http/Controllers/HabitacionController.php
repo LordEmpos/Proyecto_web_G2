@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Habitacion;
+use App\Models\Hotel;
 
 class HabitacionController extends Controller
 {
     /* public function search($text){
         /* return $text; */
+
         /* $text = $request->query('text');
         $habitaciones = Habitacion::with('hotel')->get();
         return $habitaciones;
@@ -22,6 +24,7 @@ class HabitacionController extends Controller
 
     public function search(Request $request){
         /* return $request->query('text'); */
+
         $text = $request->query('text');
         $habitaciones = Habitacion::with('hotel')->get();
         return $habitaciones;
@@ -40,7 +43,7 @@ class HabitacionController extends Controller
                 $habitaciones = Habitacion::where('capacidad', $request->input('value'))->get();
                 break;
             case 'estrellas':
-                $habitaciones = Habitacion::where('estrellas', $request->input('value'))->get();
+                $habitaciones = Hotel::where('estrellas', $request->input('value'))->get();
                 break;
         }
       return $habitaciones;
