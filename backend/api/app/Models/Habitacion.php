@@ -12,10 +12,16 @@ class Habitacion extends Model
     protected $table = 'habitaciones';
 
     public function reservas(){
-        return $this->hasMany(reserva::class);
+        return $this->hasMany(Reserva::class);
     }
     
     public function hotel(){
-        return $this->belongsTo(hotel::class);
+        return $this->belongsTo(Hotel::class);
     }
+
+    //Funcion faltante para mostrar historial
+    public function tipo(){
+        return $this->belongsTo(TipoHabitacion::class);
+    }
+    
 }

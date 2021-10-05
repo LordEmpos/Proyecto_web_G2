@@ -79,7 +79,7 @@ class ClienteController extends Controller
     }
 
     /* public function showAll(){
-        return cliente::all();
+        return Cliente::all();
     } */
 
 }

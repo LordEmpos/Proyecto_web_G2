@@ -19,21 +19,34 @@ use App\Http\Controllers\HabitacionController;
 
 /* Route::get('/Cliente', [ClienteController::class, 'showAll']); */
 
-Route::post('/Cliente/signup', [ClienteController::class, 'signup']);
+/* Route::post('/Cliente/signup', [ClienteController::class, 'signup']);
 Route::post('/Cliente/login', [ClienteController::class, 'login']);
 Route::get('/habitacion/search', [HabitacionController::class, 'search']);
-Route::get('/habitacion/filter', [HabitacionController::class, 'filter']);
+Route::get('/habitacion/filter', [HabitacionController::class, 'filter']); */
 
 /* Route::get('/habitacion/filter', [HabitacionController::class, 'filter']); */
 /* Route::post('/cliente/update', [ClienteController::class, 'update']);  */
 
-Route::group(['middleware' => ['jwt.verify']], function(){
-        Route::get('/Cliente', [ClienteController::class, 'showAll']);
-        Route::post('/Cliente/update', [ClienteController::class, 'update']);
-        Route::post('/reservacion/create', [ReservaController::class, 'create']);
-        Route::post('/reservacion/history', [ReservaController::class, 'showByCliente']);
+/* Route::group(['middleware' => ['jwt.verify']], function(){ */
+Route::group(['middleware' => ['cors']], function(){
+        Route::post('/Cliente/signup', [ClienteController::class, 'signup']);
+        Route::post('/Cliente/login', [ClienteController::class, 'login']);
+        Route::get('/habitacion/search', [HabitacionController::class, 'search']);
+        Route::post('/habitacion/filter', [HabitacionController::class, 'filter']);
         
+    Route::group(['middleware' => ['jwt.verify']], function(){
+            Route::get('/Cliente', [ClienteController::class, 'showAll']);
+            Route::post('/Cliente/update', [ClienteController::class, 'update']);
+            Route::post('/reservacion/create', [ReservaController::class, 'create']);
+            Route::get('/reservacion/history', [ReservaController::class, 'showByCliente']);
+        });
     });
+        /* Route::get('/Cliente', [ClienteController::class, 'showAll']);
+           Route::post('/Cliente/update', [ClienteController::class, 'update']);
+           Route::post('/reservacion/create', [ReservaController::class, 'create']); */
+        /* Route::get('/reservacion/history', [ReservaController::class, 'showByCliente']); */
+        
+    /* }); */
 
 /* Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user(); 

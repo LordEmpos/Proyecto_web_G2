@@ -35,8 +35,10 @@ class ReservaController extends Controller
 
         $token = $request->bearerToken();
         $doc = JWTAuth::getPayload($token)->toArray()['sub'];
-        $history = Reserva::where('doc_cliente', $doc)->get();
+        $history = Reserva::where('doc_cliente', $doc)->with(['habitacion.hotel', 'habitacion.tipo'])->get();
+        /* $history = Reserva::where('doc_cliente', $doc)->get(); */
         return $history;
     }
+    
 }
 

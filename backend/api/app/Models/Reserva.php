@@ -4,6 +4,8 @@ namespace App\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Habitacion;
+use App\Models\Cliente;
 
 class Reserva extends Model
 {
@@ -12,10 +14,10 @@ class Reserva extends Model
     protected $fillable = ['habitacion_id', 'fecha_inicio', 'fecha_fin', 'huespedes', 'doc_cliente'];
 
     public function cliente(){
-        return $this->belongsTo(cliente::class);
+        return $this->belongsTo(Cliente::class);
     }
 
     public function habitacion(){
-        return $this->belongsTo(habitacion::class);
+        return $this->belongsTo(Habitacion::class);
     }
 }

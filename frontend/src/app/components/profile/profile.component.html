@@ -28,7 +28,6 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div class="col-8 offset-2 mt-5 pt-3">
         <h2 class="fw-bold text-center">Historial de reservaciones</h2>
@@ -38,6 +37,7 @@
                     <img src="https://picsum.photos/175" alt="foto resultado 1" class="img-fluid rounded">
                 </div>
                 <div class="col-8">
+                    <!-- {{ reservation | json }}    -->                 
                     <h5 class="my-3">{{ reservation.habitacion.hotel.nombre }} (<span>{{ reservation.habitacion.hotel.ciudad }}</span>)</h5>
                     <h5 class="my-3">{{ reservation.habitacion.tipo.nombre }}</h5>
                     <h5 class="my-3">$ {{ reservation.habitacion.precio }} / noche</h5>
@@ -47,7 +47,8 @@
             </div>
         </div>        
     </div>
-</div>        
+</div>
+       
 
 <!-- <div class="container">
     <form class="card p-4 col-8 offset-2 mt-5" id="update-user-form">

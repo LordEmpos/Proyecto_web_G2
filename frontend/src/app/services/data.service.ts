@@ -26,7 +26,7 @@ export class DataService {
   }
   
   getReservations():Observable<any>{
-    return this.http.get(this.API+'/reservation/history', { headers: this.getTokenHeader() });
+    return this.http.get(this.API+'/reservacion/history', { headers: this.getTokenHeader() });
   }
 
   getTokenHeader(){
