@@ -15,6 +15,8 @@ class CreateHotelesTable extends Migration
             $table->string('ciudad', 50);
             $table->tinyInteger('estrellas');
             $table->string('telefono', 14);
+            $table->string('direccion', 30);
+            $table->string('nombre_logo', 30);
         });
     }
 

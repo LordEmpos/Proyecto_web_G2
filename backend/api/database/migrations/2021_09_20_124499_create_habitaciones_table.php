@@ -18,6 +18,7 @@ class CreateHabitacionesTable extends Migration
             $table->bigInteger('precio');
             $table->boolean('minibar');
             $table->tinyInteger('capacidad');
+            $table->string('nombre_foto', 30);
 
             $table->foreign('hotel_id')->references('id')->on('hoteles');
             $table->foreign('tipo_id')->references('id')->on('tipo_habitaciones');        
