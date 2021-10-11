@@ -58,7 +58,7 @@
     padding: 0;
     text-align: center;
 }
-.resultadostitulo{
+.resultadostitulo, .filtrar-titulo{
     font: normal 17px Arial, Helvetica, 'sans-serif';
     color: white;
     background-color: rgb(26,41,61);
@@ -66,6 +66,18 @@
     padding: 8px;
     border-radius: 25px;
     margin: 20px 0 10px;
+}
+.filter-title{
+    margin-top:10px !important; 
+}
+.filter-field{
+    border-radius: 25px;
+    text-align: center;
+    margin: 5px 0;
+    display: inline-block !important;
+}
+.filter-field-option{
+    height: 30px !important;
 }
 .lista-resultados{
     padding: 10px !important;
@@ -120,11 +132,12 @@
     margin-top: 15px;
     padding: 0 !important;
 }
-.filtrar-titulo{
+.filter-title{
     background-color: #1a293d;
     color: white;
     padding: 5px 15px;
-    margin: 0;
+    margin-bottom: 10px;
+    border-radius: 25px;
     
 }
 .filtrar-form select{

@@ -8,7 +8,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarsItems">
-                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                    <ul class="navbar-nav ml-auto mb-2 mb-sm-0">
                         <li class="BotonMenu BotonMenuActivo"><a href="#">Buscar hotel</a></li>
                         <li class="BotonMenu"><a href="history">Historial de reservas</a></li>
                         <li class="BotonMenu"><a href="signup">Regístrate</a></li>
@@ -46,16 +46,54 @@
                 <div class="col-md-3 col-xs-12">
                     <div class="filtrar-box position-sticky" style="top: 110px">
                         <div>
-                            <p class="filter-select-text">Selecciona con la tecla control sostenida las opciones a filtrar, luego haz clic en el botón.</p>
                             <p class="filtrar-titulo">Filtrar resultados por:</p>
                             <form action="" class="filtrar-form">
-                                <select class="form-select" multiple aria-label="multiple select example">
-                                    <option value="precioMasBajo">Precio más bajo</option>
-                                    <option value="recomendados">Recomendados</option>
-                                    <option value="mejorPuntuados">Mejor puntuados</option>
-                                    <option value="masBuscados">Más buscados</option>
-                                    <option value="mascotas">Admite mascotas</option>
-                                </select><br>
+                                <div class="col-12 filter-title">Precio</div>
+                                <div class="row justify-content-center">
+                                    
+                                    <div class="col-6">
+                                        <label>Entre</label>
+                                        <input type="number" id="min_price" class="form-control filter-field" placeholder="$">
+                                    </div>
+                                    <div class="col-6">
+                                        <label>y</label>
+                                        <input type="number" id="max_price"  class="form-control filter-field" placeholder="$">
+                                    </div>        
+                                </div>
+                                <div class="col-12 filter-title">Piso</div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6">
+                                        <input type="number" id="min_floor" class="form-control filter-field" placeholder="Entre el piso:">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="number" id="max_floor" class="form-control filter-field" placeholder="y el piso:">
+                                    </div>        
+                                </div>
+                                <div class="col-12 filter-title">Capacidad</div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6">
+                                        <input type="number" id="capacity" min="1" max="5"  class="form-control">
+                                        <label>Personas</label>
+                                    </div>    
+                                </div>
+                                <div class="col-12 filter-title">Estrellas</div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6">
+                                        <select id="stars" class="form-control filter-field filter-field-option">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>    
+                                </div>
+                                <div class="row col-6 offset-3 my-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="minibar">
+                                        <label class="form-check-label" for="flexCheckDefault">Tiene minibar </label>
+                                    </div>
+                                </div>
 
                                 <input type="submit" value="Filtrar" class="BotonFiltrar">
                             </form>
