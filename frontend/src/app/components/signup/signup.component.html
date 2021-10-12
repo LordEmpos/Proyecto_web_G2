@@ -17,50 +17,71 @@
         </div>
     </nav>
 </header>
-<div [formGroup]="form">
-<div class="hgroup">        
+
+<div class="hgroup" [formGroup]="form" name="f1">        
     <div class="container centrar ">
         <div id="section" class="row" for="doc">
             <div class="col-md-3 col-xs-12"></div>
-            <div class="col-md-6 col-xs-12">
-            <form action="http://127.0.0.1:8000/api/Cliente/signup"> <!-- en action, se debe poner la web donde lleguen los datos suministrados-->
-                <p>Los campos con (*) son obligatorios.</p><br/>
-                <p>Documento (*): <input class="campoTexto campDoc" type="text" name="doc" formControlName="doc" placeholder="Ingrese su documento (numeros)"></p>
-                <p>Nombres: (*): <input class="campoTexto campNom" type="text" name="nombre" formControlName="nombre" placeholder="Ingrese su(s) nombres"></p>
-                <p>Apellidos (*): <input class="campoTexto campApe" type="text" name="apellidos" formControlName="apellidos" placeholder="Ingrese sus apellidos"></p>
-                <p>Correo (*): <input class="campoTexto campCorr" type="email" name="correo" formControlName="correo" placeholder="Ingrese su correo"></p>
-                <p>Contrase&ntilde;a (*): <input class="campoTexto campCla1" type="password" formControlName="clave" name="clave" placeholder="Ingrese su contraseña"></p>
-                <p>Contrase&ntilde;a (*): <input class="campoTexto campCla2" type="password" formControlName="clave2" name="ConfirmClave" placeholder="Confirme su contraseña"></p>                
-                <!-- <script>
-                    function comprobarClave(){
-                        clave = document.f1.clave1.value
-                        ConfirmClave = document.f1.clave2.value
-                    
-                        if (clave == ConfirmClave)
-                           alert("Registrado exitosamente")
-                        else
-                           alert("Las claves no coinciden...")
-                    }
-                </script> -->
-                <input class="BotonRegistro" type="submit" value="Registrarse" (click)="signup()">
-            </form>
-            <div class="col-md-3 col-xs-12"></div>
+            <div class="col-md-6 col-xs-12">            
+                <div>
+                    <h5><strong>Los campos con (*) son obligatorios.</strong></h5><br/>
+                </div>
+                <div>
+                    <label for="doc">Documento (*): </label>                    
+                    <input type="text" name="doc" id="doc" class="campoTexto campDoc" formControlName="doc" placeholder="Ingrese su documento (numeros)">
+                </div>
+                <div>
+                    <label for="doc">Nombre (*): </label>
+                    <input type="text" name="name" id="name" class="campoTexto campNom" formControlName="nombre" placeholder="Ingrese su(s) nombre(s)">
+                </div>
+                <div>
+                    <label for="doc">Apellidos (*): </label>                    
+                    <input type="text" name="lastname" id="lastname" class="campoTexto campApe" formControlName="apellidos" placeholder="Ingrese sus apellidos">
+                </div>
+                <div>
+                    <label for="doc">Correo (*): </label>                    
+                    <input type="email" name="email" id="email" class="campoTexto campCorr" formControlName="correo" placeholder="Ingrese su correo">
+                </div>
+                <div>
+                    <label for="doc">Contrase&ntilde;a (*): </label>                    
+                    <input type="password" name="password" id="password" class="campoTexto campCla1" formControlName="clave" placeholder="Ingrese su contraseña">
+                </div>
+                <div>
+                    <label for="doc">Confirme su contrase&ntilde;a (*): </label>                    
+                    <input type="password" name="password2" id="password2" class="campoTexto campCla2" formControlName="clave2" placeholder="Confirme su contraseña">
+                </div>                
+                    <script>
+                        function comprobarClave(){
+                            claveA = document.f1.clave.value
+                            claveB = document.f1.clave2.value
+                            if (claveA == claveB){
+                                alert("Registro satisfactorio")
+                                signup();
+                            }else{
+                                alert("Las claves no coinciden...")                        
+                            }
+                        }
+                    </script>
+                <div>                    
+                    <button class="BotonRegistro" (click)="signup()">Registrarse</button>
+                </div>                                                                                                                            
+                <div class="col-md-3 col-xs-12"></div>
             </div>
         </div>
     </div>
 </div>
-</div>
+
 <footer id="footer">
     <p class="annio">2021</p>
     <p>® Copyright todos los derechos reservados</p>
     <a href="https://github.com/LordEmpos/Proyecto_web_G2" target="_blank"><small>Realizado por CODERS MisiónTIC2022</small></a>
 </footer>
 
-<!-- <div class="my-5 card col-8 offset-2" [formGroup]="form">
-    <div class="my-5">
-        <h2 class="text-center"><strong>Formulario de registro</strong></h2>
+<!-- <div [formGroup]="form">
+    <div>
+        <h2 ><strong>Formulario de registro</strong></h2>
     </div>
-    <div class="my-3 col-6 offset-3">
+    <div>
         <label for="doc" class="form-label fw-bold">Documento: </label>
         <input type="number" name="doc" id="doc" class="form-control" formControlName="doc">
     </div>
