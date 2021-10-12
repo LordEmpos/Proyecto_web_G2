@@ -110,6 +110,7 @@
                                 <div class="card shadow-sm">
                                     <div class="f-h-p"><img src="../assets/img/fotos_habitaciones/{{ result.nombre_foto }}" alt="habitacion{{ result.id }}" class="foto-habitacion"></div>
                                     <h2 class="nombre-hotel">Hotel {{ result.hotel.nombre }}</h2>
+                                    <h3 class="ciudad-hotel">{{ result.hotel.ciudad }}</h3>
                                     <div *ngIf="result.hotel.estrellas == 1" class="estrellas"><img src="../assets/img/iconos/estrellas_1.png" alt="Hotel de 1 estrella"></div>
                                     <div *ngIf="result.hotel.estrellas == 2" class="estrellas"><img src="../assets/img/iconos/estrellas_2.png" alt="Hotel de 2 estrella"></div>
                                     <div *ngIf="result.hotel.estrellas == 3" class="estrellas"><img src="../assets/img/iconos/estrellas_3.png" alt="Hotel de 3 estrella"></div>
@@ -241,3 +242,4 @@
 </div>
 
 -->
+

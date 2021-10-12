@@ -99,6 +99,13 @@
     padding: 10px;
     background-color: #1a293d ;
 }
+.ciudad-hotel{
+    font: normal 15px Arial, Helvetica, 'sans-serif';
+    color: white;
+    padding: 7px;
+    background-color: #283c57;
+    margin-top: -10px;
+}
 .estrellas{
     width: 100%;
     margin-top: 10px;
