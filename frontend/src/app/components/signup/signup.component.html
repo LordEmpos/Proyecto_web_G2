@@ -1,4 +1,62 @@
-<div class="my-5 card col-8 offset-2" [formGroup]="form">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
+        <div class="container container-mobile">
+            <a href="#"><img src="../assets/img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsItems">
+                <ul class="navbar-nav ml-auto mb-2 mb-sm-0">
+                    <li class="BotonMenu"><a href="#">Buscar hotel</a></li>
+                    <li class="BotonMenu"><a href="history">Historial de reservas</a></li>
+                    <li class="BotonMenu BotonMenuActivo"><a href="signup">Regístrate</a></li>
+                    <li class="BotonMenu"><a href="login">Ingresa</a></li>
+                    <li class="BotonMenu"><a href="profile">Perfil</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div [formGroup]="form">
+<div class="hgroup">        
+    <div class="container centrar ">
+        <div id="section" class="row" for="doc">
+            <div class="col-md-3 col-xs-12"></div>
+            <div class="col-md-6 col-xs-12">
+            <form action="http://127.0.0.1:8000/api/Cliente/signup"> <!-- en action, se debe poner la web donde lleguen los datos suministrados-->
+                <p>Los campos con (*) son obligatorios.</p><br/>
+                <p>Documento (*): <input class="campoTexto campDoc" type="text" name="doc" formControlName="doc" placeholder="Ingrese su documento (numeros)"></p>
+                <p>Nombres: (*): <input class="campoTexto campNom" type="text" name="nombre" formControlName="nombre" placeholder="Ingrese su(s) nombres"></p>
+                <p>Apellidos (*): <input class="campoTexto campApe" type="text" name="apellidos" formControlName="apellidos" placeholder="Ingrese sus apellidos"></p>
+                <p>Correo (*): <input class="campoTexto campCorr" type="email" name="correo" formControlName="correo" placeholder="Ingrese su correo"></p>
+                <p>Contrase&ntilde;a (*): <input class="campoTexto campCla1" type="password" formControlName="clave" name="clave" placeholder="Ingrese su contraseña"></p>
+                <p>Contrase&ntilde;a (*): <input class="campoTexto campCla2" type="password" formControlName="clave2" name="ConfirmClave" placeholder="Confirme su contraseña"></p>                
+                <!-- <script>
+                    function comprobarClave(){
+                        clave = document.f1.clave1.value
+                        ConfirmClave = document.f1.clave2.value
+                    
+                        if (clave == ConfirmClave)
+                           alert("Registrado exitosamente")
+                        else
+                           alert("Las claves no coinciden...")
+                    }
+                </script> -->
+                <input class="BotonRegistro" type="submit" value="Registrarse" (click)="signup()">
+            </form>
+            <div class="col-md-3 col-xs-12"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer id="footer">
+    <p class="annio">2021</p>
+    <p>® Copyright todos los derechos reservados</p>
+    <a href="https://github.com/LordEmpos/Proyecto_web_G2" target="_blank"><small>Realizado por CODERS MisiónTIC2022</small></a>
+</footer>
+
+<!-- <div class="my-5 card col-8 offset-2" [formGroup]="form">
     <div class="my-5">
         <h2 class="text-center"><strong>Formulario de registro</strong></h2>
     </div>
@@ -25,33 +83,5 @@
     <div class="my-3 d-flex justify-content-center">
         <button class="btn btn-primary" (click)="signup()">registarme</button>
     </div>        
-</div>    
+</div>  -->   
 
-<!-- <form class="my-5 card col-8 offset-2">
-    <div class="my-5">
-        <h2 class="text-center"><strong>Formulario de registro</strong></h2>
-    </div>
-    <div class="my-3 col-6 offset-3">
-        <label for="doc" class="form-label fw-bold">Documento: </label>
-        <input type="number" name="doc" id="doc" class="form-control">
-    </div>
-    <div class="my-3 col-6 offset-3">
-        <label for="doc" class="form-label fw-bold">Nombre: </label>
-        <input type="text" name="name" id="name" class="form-control">
-    </div>
-    <div class="my-3 col-6 offset-3">
-        <label for="doc" class="form-label fw-bold">Apellidos: </label>
-        <input type="text" name="lastname" id="lastname" class="form-control">
-    </div>
-    <div class="my-3 col-6 offset-3">
-        <label for="doc" class="form-label fw-bold">Correo: </label>
-        <input type="text" name="email" id="email" class="form-control">
-    </div>
-    <div class="my-3 col-6 offset-3">
-        <label for="doc" class="form-label fw-bold">Contraseña: </label>
-        <input type="password" name="password" id="password" class="form-control">
-    </div>
-    <div class="my-3 d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary">registarme</button>
-    </div>        
-</form> -->

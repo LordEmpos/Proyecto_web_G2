@@ -15,7 +15,8 @@ form = new FormGroup({
     nombre: new FormControl(''),
     apellidos: new FormControl(''),
     correo: new FormControl(''),
-    clave: new FormControl('')
+    clave: new FormControl(''),
+    ConfirmClave: new FormControl('')
 });
 
   constructor(
@@ -24,15 +25,12 @@ form = new FormGroup({
 
   ngOnInit(): void {
     /* this.data.saludar(); */
-    
   }
 
   signup(){
     this.data.signup(this.form.value).subscribe(function(data){
     console.log(data);
     });
-
-
   }
 
  }

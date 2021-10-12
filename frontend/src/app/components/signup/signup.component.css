@@ -1,0 +1,51 @@
+#contenedor{
+    width: 1200px;
+    height: auto;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+#contenido{
+    height: 100%;
+    border-style: solid;
+    border-radius: 1em;
+    padding: 20px;    
+}
+#seccion{
+    height: 50%;    
+}
+.campoTexto{
+    box-sizing: content-box;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    width: 250px;      
+    border-radius: 20px;  
+}
+.centrar{
+    text-align: center;
+}
+#footer{
+    bottom: 0px !important;
+    position: absolute;
+}
+.campDoc{margin-left: 59px;}
+.campNom{margin-left: 72px;}
+.campApe{margin-left: 75px;}
+.campCorr{margin-left: 92px;}
+.campCla1{margin-left: 58px;}
+.campCla2{margin-left: 58px;}
+.campFecha{margin-left: 10px;}
+
+@media screen and (max-width: 800px){
+    .campDoc{margin-left: 0px;}
+    .campNom{margin-left: 0px;}
+    .campApe{margin-left: 0px;}
+    .campCorr{margin-left: 0px;}
+    .campCla1{margin-left: 0px;}
+    .campCla2{margin-left: 0px;}
+    .campFecha{margin-left: 0px;}
+    #footer{
+        position: relative !important;
+    }
+}

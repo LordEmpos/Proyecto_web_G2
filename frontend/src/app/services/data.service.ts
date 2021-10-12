@@ -29,6 +29,16 @@ export class DataService {
     return this.http.get(this.API+'/reservacion/history', { headers: this.getTokenHeader() });
   }
 
+  search(text:string):Observable<any>{
+    let params = new HttpParams();
+    params = params.append('text', text);
+    return this.http.get(this.API+'/habitacion/search', { params: params }); 
+  }
+       
+  filter(data:Object):Observable<any>{
+    return this.http.post(this.API+'/habitacion/filter', data);   
+  }
+
   getTokenHeader(){
     let token = localStorage.getItem('token');
   return new HttpHeaders({
