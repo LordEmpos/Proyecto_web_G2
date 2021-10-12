@@ -49,4 +49,8 @@ class HabitacionController extends Controller
       return $habitaciones;
     }
 
+    public function listar(){
+        return Habitacion::with('hotel', 'tipo')->get();
+    }
+
 } 

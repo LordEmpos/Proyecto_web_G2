@@ -37,6 +37,9 @@ export class DataService {
     });
   }
 
-
+  // Funcion para listar todas las habitaciones al cargar el home
+  getListar():Observable<any>{
+    return this.http.get(this.API+'/habitacion/listar');
+  }
 
 }

@@ -33,7 +33,8 @@ Route::group(['middleware' => ['cors']], function(){
         Route::post('/Cliente/login', [ClienteController::class, 'login']);
         Route::get('/habitacion/search', [HabitacionController::class, 'search']);
         Route::post('/habitacion/filter', [HabitacionController::class, 'filter']);
-        
+        Route::get('/habitacion/listar', [HabitacionController::class, 'listar']); // Para listar todas las habitaciones al cargar el home.
+
     Route::group(['middleware' => ['jwt.verify']], function(){
             Route::get('/Cliente', [ClienteController::class, 'showAll']);
             Route::post('/Cliente/update', [ClienteController::class, 'update']);

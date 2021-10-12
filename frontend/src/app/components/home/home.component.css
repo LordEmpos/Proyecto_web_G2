@@ -94,22 +94,30 @@
     height: auto;
 }
 .nombre-hotel{
-    font: normal 15px Arial, Helvetica, 'sans-serif';
+    font: normal 17px Arial, Helvetica, 'sans-serif';
     color: white;
     padding: 10px;
     background-color: #1a293d ;
 }
 .estrellas{
     width: 100%;
+    margin-top: 10px;
 }
 .estrellas img{
     width: 120px;
 }
 .precio{
-    font: bold 18px Arial, Helvetica, 'sans-serif';
+    font: bold 20px Arial, Helvetica, 'sans-serif';
 }
 .precio-anexo{
     font: normal 11px Arial, Helvetica, 'sans-serif';
+}
+.capacidad{
+    font: normal 15px Arial, Helvetica, 'sans-serif';
+    margin-bottom: 15px;
+}
+.minibar{
+    margin-bottom: 15px;
 }
 .BotonFiltrar{
     margin-top: -20px !important;
