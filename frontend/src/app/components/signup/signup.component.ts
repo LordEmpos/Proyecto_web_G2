@@ -15,8 +15,7 @@ form = new FormGroup({
     nombre: new FormControl(''),
     apellidos: new FormControl(''),
     correo: new FormControl(''),
-    clave: new FormControl(''),
-    ConfirmClave: new FormControl('')
+    clave: new FormControl('')
 });
 
   constructor(
