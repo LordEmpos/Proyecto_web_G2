@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { NgForm, FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -19,7 +20,8 @@ form = new FormGroup({
 });
 
   constructor(
-    private data:DataService
+    private data:DataService,
+    private router:Router
   ){}
 
   ngOnInit(): void {
@@ -28,9 +30,15 @@ form = new FormGroup({
 
   signup(){
     this.data.signup(this.form.value).subscribe(function(data){
+    });
+    this.router.navigate(['']);
+  }
+  
+  /* signup(){
+    this.data.signup(this.form.value).subscribe(function(data){
     console.log(data);
     });
-  }
+  } */
 
  }
 
