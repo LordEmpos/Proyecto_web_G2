@@ -34,7 +34,6 @@
 .campApe{margin: 12px;margin-left: 121px;}
 .campCorr{margin: 12px;margin-left: 138px;}
 .campCla1{margin: 12px;margin-left: 105px;}
-.campCla2{margin: 12px;margin-left: 18px;}
 .BotonRegistro{margin-top: 4px;}
 
 @media screen and (max-width: 800px){
@@ -43,7 +42,6 @@
     .campApe{margin-left: 0px;}
     .campCorr{margin-left: 0px;}
     .campCla1{margin-left: 0px;}
-    .campCla2{margin-left: 0px;}
     .campFecha{margin-left: 0px;}    
     #footer{
         position: relative !important;
