@@ -106,6 +106,33 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+.generaltitulo{
+    font: normal 22px Arial, Helvetica, 'sans-serif';
+    color: white;
+    background-color: rgb(26,41,61);
+    background: linear-gradient(90deg, rgba(26,41,61,1) 0%, rgba(117,25,129,1) 61%, rgba(161,4,150,1) 100%);
+    padding: 8px;
+    border-radius: 25px;
+    margin: 10px 0 10px;
+    text-align: center;
+    border: solid 1px #fff;
+}
+
+
+.parallax-general{
+    /* The image used */
+    background-image: url("/assets/img/bucaramanga-parallax.jpeg");
+    /* Set a specific height */
+    min-height: auto;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    margin-top: -12px;
+}
+
 /* RESPONSIVE MAIN */
     /* Celulares */
     @media screen and (max-width: 800px){
@@ -131,4 +158,11 @@ textarea:focus, input:focus{
         .hgroup{
             margin-top: 67px; 
         }
+        .generaltitulo{
+            font: normal 18px Arial, Helvetica, 'sans-serif';
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 30px;
+        }
+
     }

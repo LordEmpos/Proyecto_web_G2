@@ -19,12 +19,17 @@ export class HomeComponent implements OnInit {
 
   results: any[] = [];
 
-  constructor(
-    private data:DataService
-  ) { }
+  constructor( private data:DataService ) { }
 
   ngOnInit(): void {
     this.getListar();
+  }
+
+  getListar(){
+    let ctx = this;
+    this.data.getListar().subscribe((res)=>{
+      ctx.results = res as Array<any>;
+    });
   }
 
   search(){
@@ -34,22 +39,13 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  getListar(){
-    let ctx = this;
-    this.data.getListar().subscribe(function(res){
-      ctx.results = res as Array<any>;
-    });
-  }
-
   piso(event:any){
     let ctx = this;
-
     let data = {
       filter: 'piso',
       min: this.minFloor,
       max: this.maxFloor
     };
-
     this.data.filter(data).subscribe(function(res){
       ctx.results = res as Array<any>;
     });
@@ -57,13 +53,11 @@ export class HomeComponent implements OnInit {
 
   precio(event:any){
     let ctx = this;
-
     let data = {
       filter: 'precio',
       min: this.minPrice,
       max: this.maxPrice
     };
-
     this.data.filter(data).subscribe(function(res){
       ctx.results = res as Array<any>;
     });
@@ -71,12 +65,10 @@ export class HomeComponent implements OnInit {
 
   estrellas(){
     let ctx = this;
-
     let data = {
       filter: 'estrellas',
       value: this.stars
     };
-
     this.data.filter(data).subscribe(function(res){
       ctx.results = res as Array<any>;
     });
@@ -84,12 +76,10 @@ export class HomeComponent implements OnInit {
 
   capacidad(event:any){
     let ctx = this;
-
     let data = {
       filter: 'capacidad',
       value: this.capacity
     };
-
     this.data.filter(data).subscribe(function(res){
       ctx.results = res as Array<any>;
     });
@@ -97,12 +87,10 @@ export class HomeComponent implements OnInit {
 
   minibar(){
     let ctx = this;
-
     let data = {
       filter: 'minibar',
       value: this._minibar ? 1 : 0
     };
-
     this.data.filter(data).subscribe(function(res){
       ctx.results = res as Array<any>;
     });

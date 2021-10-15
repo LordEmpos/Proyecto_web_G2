@@ -1,0 +1,9 @@
+.reserva-response{
+    font: normal 20px Arial, Helvetica, 'sans-serif';
+    color: white;
+    background-color: rgb(26,41,61);
+    background: linear-gradient(90deg, rgba(26,41,61,1) 0%, rgba(117,25,129,1) 61%, rgba(161,4,150,1) 100%);
+    padding: 15px;
+    margin: 20% 0;
+    text-align: center;
+}

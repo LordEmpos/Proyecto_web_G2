@@ -1,0 +1,86 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
+        <div class="container container-mobile">
+            <a href="#"><img src="../assets/img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsItems">
+                <ul class="navbar-nav ml-auto mb-2 mb-sm-0">
+                    <li class="BotonMenu"><a href="">Buscar hotel</a></li>
+                    <li class="BotonMenu BotonMenuActivo"><a href="history">Historial de reservas</a></li>
+                    <li class="BotonMenu"><a href="signup">Regístrate</a></li>
+                    <li class="BotonMenu"><a href="login">Ingresa</a></li>
+                    <li class="BotonMenu"><a href="profile">Perfil</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="hgroup">
+    <div class="parallax-general">
+        <div class="container">
+            <div class="generaltitulo">Historial de reservaciones</div>
+        </div>
+    </div>
+    <div class="container" id="resultados">
+        <div class="row row-custom">
+            <div class="col-md-12 col-xs-12 album p-1">
+                <div class="container lista-resultados">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                        <div class="col" *ngFor="let reservation of reservations">
+                            <div class="card shadow-sm">
+                                <div class="f-h-p"><img src="../assets/img/fotos_habitaciones/{{ reservation.habitacion.nombre_foto }}" alt="habitacion{{ reservation.habitacion.id }}" class="foto-habitacion"></div>
+                                <h2 class="nombre-hotel">Hotel {{ reservation.habitacion.hotel.nombre }}</h2>
+                                <h3 class="ciudad-hotel">{{ reservation.habitacion.hotel.ciudad }}</h3>
+                                <div class="col-12 g-0 dates-box">
+                                    <div class="col-12 reserva-date">
+                                        Fecha de inicio: &nbsp;<i class="fas fa-calendar-alt"></i> {{ reservation.fecha_inicio }}
+                                    </div>
+                                    <div class="col-12 reserva-date">
+                                        Fecha de final: &nbsp;<i class="fas fa-calendar-alt"></i> {{ reservation.fecha_fin }}
+                                    </div>
+                                </div>
+                                <div *ngIf="reservation.habitacion.hotel.estrellas == 1" class="estrellas"><img src="../assets/img/iconos/estrellas_1.png" alt="Hotel de 1 estrella"></div>
+                                <div *ngIf="reservation.habitacion.hotel.estrellas == 2" class="estrellas"><img src="../assets/img/iconos/estrellas_2.png" alt="Hotel de 2 estrella"></div>
+                                <div *ngIf="reservation.habitacion.hotel.estrellas == 3" class="estrellas"><img src="../assets/img/iconos/estrellas_3.png" alt="Hotel de 3 estrella"></div>
+                                <div *ngIf="reservation.habitacion.hotel.estrellas == 4" class="estrellas"><img src="../assets/img/iconos/estrellas_4.png" alt="Hotel de 4 estrella"></div>
+                                <div *ngIf="reservation.habitacion.hotel.estrellas == 5" class="estrellas"><img src="../assets/img/iconos/estrellas_5.png" alt="Hotel de 5 estrella"></div>
+                                <div class="card-body">
+                                    <h3 class="precio">${{ reservation.habitacion.precio }}</h3>
+                                    <p class="precio-anexo">*precio por noche</p>
+                                    <h4 class="capacidad">Capacidad para {{ reservation.habitacion.capacidad }} <i class="fas fa-user"></i> </h4>
+                                    <div *ngIf="reservation.habitacion.minibar == 1" class="minibar"><i class="fas fa-wine-bottle"></i> Minibar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="col-8 offset-2 mt-5 pt-3">
+            <h2 class="fw-bold text-center">Historial de reservaciones</h2>
+            <div class="card result p-3 my-3" *ngFor="let reservation of reservations">
+                <div class="row" id="result-1">
+                    <div class="col-4 d-flex align-items-center">
+                        <img src="https://picsum.photos/175" alt="foto resultado 1" class="img-fluid rounded">
+                    </div>
+                    <div class="col-8">                  
+                        <h5 class="my-3">{{ reservation.habitacion.habitacion.hotel.nombre }} (<span>{{ reservation.habitacion.habitacion.hotel.ciudad }}</span>)</h5>
+                        <h5 class="my-3">{{ reservation.habitacion.habitacion.tipo.nombre }}</h5>
+                        <h5 class="my-3">$ {{ reservation.habitacion.habitacion.precio }} / noche</h5>
+                        <h5 class="my-3"><i class="fas fa-calendar-alt"></i> {{ reservation.habitacion.fecha_inicio }} - <i class="fas fa-calendar-alt"></i> {{ reservation.habitacion.fecha_fin }}</h5>
+                        <h5 class="my-3">{{ reservation.habitacion.habitacion.hotel.estrellas }} <i class="fas fa-star"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ reservation.habitacion.huespedes }} <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;<span *ngIf="reservation.habitacion.habitacion.minibar == 1"><i class="fas fa-wine-bottle"></i> minibar</span></h5>
+                    </div>                        
+                </div>
+            </div>       
+        </div>
+    </div>
+ -->
+
+</div>
+

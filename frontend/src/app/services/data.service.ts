@@ -6,23 +6,23 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-
   private API = 'http://127.0.0.1:8000/api';
+  /* private API = 'https://prueba-hoteles-wh-unab.herokuapp.com/api'; */
 
   constructor(
     private http:HttpClient
-    ) {}
+  ) { }
 
   signup(data:Object):Observable<any>{
-        return this.http.post(this.API+'/Cliente/signup', data);
+    return this.http.post(this.API+'/cliente/signup', data);
   }
 
   login(data:Object):Observable<any>{
-    return this.http.post(this.API+'/Cliente/login', data);
+    return this.http.post(this.API+'/cliente/login', data);
   }
 
   updateClient(data:Object):Observable<any>{
-    return this.http.post(this.API+'/Cliente/update', data, { headers: this.getTokenHeader() });
+    return this.http.post(this.API+'/cliente/update', data, { headers: this.getTokenHeader() });
   }
   
   getReservations():Observable<any>{
@@ -32,24 +32,32 @@ export class DataService {
   search(text:string):Observable<any>{
     let params = new HttpParams();
     params = params.append('text', text);
-    return this.http.get(this.API+'/habitacion/search', { params: params }); 
+    return this.http.get(this.API+'/habitacion/search', { params: params });
   }
-       
+
   filter(data:Object):Observable<any>{
-    return this.http.post(this.API+'/habitacion/filter', data);   
+    return this.http.post(this.API+'/habitacion/filter', data);
   }
 
-  getTokenHeader(){
-    let token = localStorage.getItem('token');
-  return new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`
-    });
-  }
-
-  // Funcion para listar todas las habitaciones al cargar el home
   getListar():Observable<any>{
     return this.http.get(this.API+'/habitacion/listar');
   }
 
+  getReservaData(data:Object):Observable<any>{
+    return this.http.post(this.API+'/reservacion/datos', data);
+  }
+
+  createReservation(data:Object):Observable<any>{
+    return this.http.post(this.API+'/reservacion/create', data, { headers: this.getTokenHeader() });
+  }
+
+  getTokenHeader(){
+    let token = localStorage.getItem('token');
+
+    return new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    });
+  }
+  
 }

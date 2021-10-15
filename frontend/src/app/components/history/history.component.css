@@ -1,0 +1,107 @@
+#resultados{
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
+}
+.resultadostitulo, .filtrar-titulo{
+    font: normal 22px Arial, Helvetica, 'sans-serif';
+    color: white;
+    background-color: rgb(26,41,61);
+    background: linear-gradient(90deg, rgba(26,41,61,1) 0%, rgba(117,25,129,1) 61%, rgba(161,4,150,1) 100%);
+    padding: 8px;
+    border-radius: 25px;
+    margin: 0px 0 10px;
+}
+.filter-title{
+    margin-top:10px !important; 
+}
+.filter-field{
+    border-radius: 25px;
+    text-align: center;
+    margin: 5px 0;
+    display: inline-block !important;
+}
+.filter-field-option{
+    height: 30px !important;
+}
+.lista-resultados{
+    padding: 10px !important;
+}
+.card{
+    margin: 0 0 10px !important;
+    padding: 1px !important;
+}
+.card:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495) !important;
+}
+.f-h-p{width: 100%;}
+.foto-habitacion{
+    width: 100%;
+    height: auto;
+}
+.nombre-hotel{
+    font: normal 17px Arial, Helvetica, 'sans-serif';
+    color: white;
+    padding: 10px;
+    background-color: #1a293d ;
+}
+.ciudad-hotel{
+    font: normal 15px Arial, Helvetica, 'sans-serif';
+    color: white;
+    padding: 7px;
+    background-color: #283c57;
+    margin-top: -10px;
+}
+.estrellas{
+    width: 100%;
+    margin-top: 10px;
+}
+.estrellas img{
+    width: 120px;
+}
+.precio{
+    font: bold 20px Arial, Helvetica, 'sans-serif';
+}
+.precio-anexo{
+    font: normal 11px Arial, Helvetica, 'sans-serif';
+}
+.capacidad{
+    font: normal 15px Arial, Helvetica, 'sans-serif';
+    margin-bottom: 15px;
+}
+.minibar{
+    margin-bottom: 15px;
+}
+.dates-box{
+    margin-top: -7px;
+}
+.reserva-date{
+    background-color: #e1e1e1;
+    padding: 5px;
+    border: solid 1px #fff
+}
+
+/* RESPONSIVE HOME */
+/* Celulares */
+@media screen and (max-width: 400px){
+    .row-custom{
+        margin-right: 0 !important;
+        padding-left: 0px;
+    }
+    .col-xs-12{
+        padding-right: 0 !important;
+    }
+    #resultados{margin-top: -5px;}
+    .resultadostitulo{
+        margin: 0 15px;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .lista-resultados{
+        padding: 10px 10px 20px 20px !important;
+    }
+
+
+}

@@ -1,1 +1,65 @@
-<p>reservation works!</p>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark logo-navbar" aria-label="Eighth navbar example">
+        <div class="container container-mobile">
+            <a href="#"><img src="../assets/img/logoBucarHotel.jpg" alt="Logo Bucarhotel" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsItems" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsItems">
+                <ul class="navbar-nav ml-auto mb-2 mb-sm-0">
+                    <li class="BotonMenu"><a href="">Buscar hotel</a></li>
+                    <li class="BotonMenu BotonMenuActivo"><a href="">Reservar habitación</a></li>
+                    <li class="BotonMenu"><a href="history">Historial de reservas</a></li>
+                    <li class="BotonMenu"><a href="signupj">Regístrate</a></li>
+                    <li class="BotonMenu"><a href="login">Ingresa</a></li>
+                    <li class="BotonMenu"><a href="profile">Perfil</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="hgroup">
+    <div class="parallax-general">
+        <div class="container">
+            <div class="generaltitulo">Reserva tu habitación</div>
+        </div>
+    </div>
+    <div class="container">
+        <div *ngFor="let result of results">
+            <div class="row justify-content-center">
+                <div class="card shadow-sm col-md-5 col-xs-12">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="f-h-p"><img src="../assets/img/fotos_habitaciones/{{ result.nombre_foto }}" alt="habitacion{{ result.id }}" class="foto-habitacion"></div>
+                        </div>
+                        <div class="col-12">
+                            <h2 class="nombre-hotel">Hotel {{ result.hotel.nombre }}</h2>
+                            <h3 class="ciudad-hotel">{{ result.hotel.ciudad }}</h3>
+                            <div *ngIf="result.hotel.estrellas == 1" class="estrellas"><img src="../assets/img/iconos/estrellas_1.png" alt="Hotel de 1 estrella"></div>
+                            <div *ngIf="result.hotel.estrellas == 2" class="estrellas"><img src="../assets/img/iconos/estrellas_2.png" alt="Hotel de 2 estrella"></div>
+                            <div *ngIf="result.hotel.estrellas == 3" class="estrellas"><img src="../assets/img/iconos/estrellas_3.png" alt="Hotel de 3 estrella"></div>
+                            <div *ngIf="result.hotel.estrellas == 4" class="estrellas"><img src="../assets/img/iconos/estrellas_4.png" alt="Hotel de 4 estrella"></div>
+                            <div *ngIf="result.hotel.estrellas == 5" class="estrellas"><img src="../assets/img/iconos/estrellas_5.png" alt="Hotel de 5 estrella"></div>
+                            <div class="row reserva-detail">
+                                <div class="card-body col-md-6 col-xs-12">
+                                    <h3 class="precio">${{ result.precio }}</h3>
+                                    <p class="precio-anexo">*precio por noche</p>
+                                    <div class="capacidad">Capacidad para {{ result.capacidad }} <i class="fas fa-user">   </i></div>
+                                    <div *ngIf="result.minibar == 1" class="minibar"><i class="fas fa-wine-bottle"></i> Minibar</div>
+                                </div>
+                                <div [formGroup]="form" class="col-md-6 col-xs-12">
+                                    <input formControlName="habitacion_id" [(ngModel)]="habitacion_id" style="display: none;">
+                                    <label class="date-field" for="start_date">Fecha de inicio: </label><input type="date" name="start_date" id="start_date" formControlName="fecha_inicio"><br>
+                                    <label class="date-field" for="end_date">Fecha de fin: </label><input type="date" name="end_date" id="end_date" formControlName="fecha_fin"><br>
+                                    <label class="date-field" for="huespedes">Huéspedes: </label><input type="number" name="huespedes" id="huespedes" formControlName="huespedes">
+                                </div>        
+                                <input type="submit" class="BotonReservar" value="Reservar" (click)="createReservation()">    
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
