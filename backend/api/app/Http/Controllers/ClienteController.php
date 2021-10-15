@@ -78,6 +78,13 @@ class ClienteController extends Controller
         return array('updated' => $updated);
     }
 
+    public function datoscliente(Request $request){
+        $token = $request->bearerToken();
+        $doc = JWTAuth::getPayload($token)->toArray()['sub'];
+        $cliente = Cliente::where('doc', $doc)->get();
+        return $cliente;
+    }
+
     /* public function showAll(){
         return Cliente::all();
     } */

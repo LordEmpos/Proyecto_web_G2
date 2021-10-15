@@ -1,0 +1,39 @@
+.card{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    vertical-align: top !important;
+    text-align: center !important;
+}
+.BotonActualizar, .BotonEliminar{
+    padding: 5px 25px !important;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a293d !important;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    width: auto;
+    margin: 10px auto 0px;
+}
+.BotonEliminar{
+    margin: 10px auto;
+}
+.BotonActualizar:hover{background-color: #661b77; color: white;}
+.BotonEliminar:hover{background-color: #661b77; color: white;}
+.profileForm{
+    text-align: center;
+}
+.profileForm input{
+    font: normal 16px Arial, Helvetica, 'sans-serif';
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-top: 25px;
+    background-color: #f1f1f1;
+}
+.datos-cliente{
+    padding-bottom: 10px;
+}
+.mensaje{
+    font: normal 14px Arial, Helvetica, 'sans-serif';
+}

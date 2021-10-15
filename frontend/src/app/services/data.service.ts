@@ -24,9 +24,18 @@ export class DataService {
   updateClient(data:Object):Observable<any>{
     return this.http.post(this.API+'/cliente/update', data, { headers: this.getTokenHeader() });
   }
+
+  deleteClient(data:Object):Observable<any>{
+    /* return this.http.delete(this.API+'/cliente/delete', data, { headers: this.getTokenHeader() }); */
+    return this.http.delete(this.API+'/cliente/delete', data);
+  }
   
   getReservations():Observable<any>{
     return this.http.get(this.API+'/reservacion/history', { headers: this.getTokenHeader() });
+  }
+
+  getDatosCliente():Observable<any>{
+    return this.http.get(this.API+'/cliente/datoscliente', { headers: this.getTokenHeader() });
   }
 
   search(text:string):Observable<any>{
